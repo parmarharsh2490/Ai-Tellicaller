@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-text {
+    background-image: linear-gradient(94.19deg, #FFFFFF -19.1%, #A861FA 42.82%, #7F3AF5 104.73%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.gradient-text-alt-1 {
+    background-image: linear-gradient(93.87deg, #00FFBD -12.2%, #025B8C 110.62%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.gradient-text-alt-3 {
+    background-image: linear-gradient(96.06deg, #0047FF -9.25%, #00BCD4 133.26%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.gradient-text-alt-2 {
+    background-image:  linear-gradient(93.87deg, #19FB98 -12.2%, #8C01FA 110.62%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.gradient-text-alt-4 {
+    background-image:linear-gradient(93.87deg, #00FFBD -12.2%, #025B8C 110.62%)    ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
