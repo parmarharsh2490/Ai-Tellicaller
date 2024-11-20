@@ -8,7 +8,7 @@ import Navigation from "./components/Navigation";
 import NewThingsInAi from "./components/NewThingsInAi";
 
 const App = () => {
-  const words = ["Doctors", "Engineers", "Hello", "kdjgjo"]; // Words to rotate
+  const words = ["Doctors", "Engineers", "Boost Business"]; // Words to rotate
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
