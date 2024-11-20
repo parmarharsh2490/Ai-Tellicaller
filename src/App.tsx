@@ -42,8 +42,8 @@ const App = () => {
           indistinguishable from humans, available 24/7 at a fraction of the cost
         </p>
 
-        <div className="flex flex-col md:flex-row justify-center gap-4">
-          <button className="bg-gray-800 hover:bg-gray-700 text-white px-5 py-3 border rounded-full">
+        <div className="flex flex-row justify-center gap-4">
+          <button className="bg-gray-800 hover:bg-gray-700 text-white px-5 py-3 border max-w-40 rounded-full">
             See A Demo 🎥
           </button>
           <BookDemoButton/>

@@ -1,8 +1,7 @@
-import { FaEnvelope, FaPhone, FaHome } from "react-icons/fa"; // Importing icons from react-icons
-
+import { FaEnvelope, FaPhone, FaHome } from "react-icons/fa";
 const Contact = () => {
   return (
-    <div className="bg-gray-900 mt-20 text-white p-8 rounded-lg max-w-2xl mx-auto">
+    <div className="bg-black mt-20 sm:ml-10 text-white p-8 rounded-lg max-w-2xl">
       {/* Title */}
       <h1 className="text-2xl font-bold mb-6">Contact Us</h1>
 

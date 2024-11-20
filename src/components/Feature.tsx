@@ -25,10 +25,10 @@ const FeatureCard = ({ icon: Icon, title, description }: {
 const StatCard = ({ value, label, color }: { value: string; label: string; color: string }) => (
     <div className="flex items-center gap-6">
       <div>
-        <div className={`text-4xl md:text-5xl font-bold ${color}`}>
+        <div className={`text-2xl md:text-5xl font-bold ${color}`}>
           {value}
         </div>
-        <div className="mt-2  md:text-xs text-start" style={{color : "#C4C4C4"}}>
+        <div className="mt-2 text-xs md:text-xs text-start" style={{color : "#C4C4C4"}}>
           {label}
         </div>
       </div>
@@ -125,7 +125,7 @@ const features = [
             <span className="text-blue-500">Numbers</span>
           </h2>
           
-          <div className="flex items-center gap-12 justify-center">
+          <div className="flex items-center gap-2 sm:gap-12 justify-center">
             {stats.map((stat, index) => (
               <StatCard
                 key={index}

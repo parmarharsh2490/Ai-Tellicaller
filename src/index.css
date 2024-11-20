@@ -38,3 +38,18 @@ body {
     background-clip: text;
     color: transparent;
 }
+
+.bg-image {
+    background-image: url('/background.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%; /* Ensure it spans the full height of its container */
+    width: 100%; /* Ensure it spans the full width of its container */
+    display: flex;
+    flex-direction: column; /* Align content within the div */
+    justify-content: flex-start; /* Adjust as per design */
+    padding: 20px; /* Add padding if necessary to match spacing */
+    border-radius: 8px; /* Match rounded corners if required */
+  }
+  

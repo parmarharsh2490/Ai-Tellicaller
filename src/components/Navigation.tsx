@@ -4,7 +4,7 @@ const Navigation = () => {
   return (
     <nav className="flex justify-between items-center py-2 px-2">
     <div className="flex items-center">
-      {/* <img src="/api/placeholder/40/40" alt="Dialoft AI Logo" className="h-10" /> */}
+      {/* <img src="/bapi/placeholder/40/40" alt="Dialoft AI Logo" className="h-10" /> */}
       <span className="ml-2 text-xl font-bold gradient-text">Dialoft AI</span>
     </div>
     
