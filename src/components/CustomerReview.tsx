@@ -87,7 +87,7 @@ const handleNext = () => {
           <WaveDecoration2 />
         </div>
         {/* Review Box */}
-        <div className="z-10 relative w-full max-w-xl p-8 bg-gradient-to-b from-gray-900 to-gray-800 rounded-lg shadow-lg text-center">
+        <div className="z-10 relative w-full max-w-xl p-4 sm:p-8 bg-gradient-to-b from-gray-900 to-gray-800 rounded-lg shadow-lg text-center">
           <p className="text-gray-300 text-sm sm:text-lg leading-relaxed">
             {reviews[selectedIndex].description}
           </p>
@@ -104,8 +104,8 @@ const handleNext = () => {
               alt="Profile"
               className="w-16 h-16 rounded-full border-2 border-gray-500"
             />
-            <h3 className="mt-4 text-lg font-semibold">{reviews[selectedIndex].name}</h3>
-            <p className="text-sm text-gray-400">
+            <h3 className="mt-4 text-sm sm:text-lg font-semibold">{reviews[selectedIndex].name}</h3>
+            <p className="text-xs sm:text-sm text-gray-400">
             {reviews[selectedIndex].position}
             </p>
           </div>

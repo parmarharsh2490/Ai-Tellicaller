@@ -25,10 +25,10 @@ const FeatureCard = ({ icon: Icon, title, description }: {
 const StatCard = ({ value, label, color }: { value: string; label: string; color: string }) => (
     <div className="flex items-center gap-6">
       <div>
-        <div className={`text-2xl md:text-5xl font-bold ${color}`}>
+        <div className={`text-xl sm:text-2xl md:text-5xl font-bold ${color}`}>
           {value}
         </div>
-        <div className="mt-2 text-xs md:text-xs text-start" style={{color : "#C4C4C4"}}>
+        <div className="mt-2 text-xs  text-center" style={{color : "#C4C4C4"}}>
           {label}
         </div>
       </div>
@@ -100,14 +100,14 @@ const features = [
   ];
 
   return (
-    <div className="w-full bg-black text-white py-20">
+    <div className="w-full bg-black text-white">
       {/* Features Section */}
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Features
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
@@ -119,7 +119,7 @@ const features = [
         </div>
 
         {/* Dialoft AI in Numbers Section */}
-        <div>
+        <div className=''>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Dialoft AI In{' '}
             <span className="text-blue-500">Numbers</span>

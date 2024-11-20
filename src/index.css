@@ -52,19 +52,33 @@ body {
     padding: 20px; /* Add padding if necessary to match spacing */
     border-radius: 8px; /* Match rounded corners if required */
   }
-
-  @keyframes slideUp {
-    from {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    to {
+  .word {
+    overflow: hidden;
+    width: full;
+    height: 50px; /* Adjusted for better text visibility */
+  }
+  
+  .word span {
+    display: block;
+    height: 50px;
+    line-height: 50px; /* Ensures vertical centering */
+    /* padding-left: 10px; */
+    animation: spin_words 8s infinite ease-in-out;
+    text-align: center;
+  }
+  
+  @keyframes spin_words {
+    0% {
       transform: translateY(0);
-      opacity: 1;
+    }
+    33% {
+      transform: translateY(-50px);
+    }
+    66% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0);
     }
   }
   
-  .animate-slide-up {
-    animation: slideUp 0.5s ease-in-out;
-  }
-    
