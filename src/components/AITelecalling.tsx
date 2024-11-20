@@ -86,7 +86,7 @@
 // );
 
 // export default AiTelecallingComponent;
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const industries = [
   {
@@ -141,7 +141,13 @@ const industries = [
   }
 ];
 
-const IndustryLabel = ({ label, isActive, onClick }) => (
+interface IndustryLabelProps {
+  label: string;
+  isActive: boolean;
+  onClick: () => void;
+}
+
+const IndustryLabel = ({ label, isActive, onClick }: IndustryLabelProps) => (
   <button
     className={`border text-xs sm:text-sm h-auto w-auto p-2 sm:p-3 uppercase rounded-full whitespace-nowrap transition-all ${
       isActive ? 'border-teal-500 bg-teal-500/10' : 'border-gray-700 hover:border-purple-500/50'
