@@ -52,4 +52,19 @@ body {
     padding: 20px; /* Add padding if necessary to match spacing */
     border-radius: 8px; /* Match rounded corners if required */
   }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
   
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-in-out;
+  }
+    

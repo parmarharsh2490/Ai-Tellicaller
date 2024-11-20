@@ -4,10 +4,13 @@ const Navigation = () => {
   return (
     <nav className="flex justify-between items-center py-2 px-2">
     <div className="flex items-center">
-      {/* <img src="/bapi/placeholder/40/40" alt="Dialoft AI Logo" className="h-10" /> */}
-      <span className="ml-2 text-xl font-bold gradient-text">Dialoft AI</span>
+      <img src="logo.svg" alt="Dialoft AI Logo" className="h-10" />
+      {/* <span className="ml-2 text-xl font-bold gradient-text">Dialoft AI</span> */}
     </div>
-    
+    <div className= "flex md:hidden items-center space-x-6" style={{color : "#848895"}}>
+    <a href="#" className="hover:text-purple-400">Human vs AI</a>
+    <a href="#" className="hover:text-purple-400">Industries</a>
+    </div>
     <div className="hidden md:flex items-center space-x-6" style={{color : "#848895"}}>
       <a href="#" className="hover:text-purple-400">Human vs AI</a>
       <a href="#" className="hover:text-purple-400">Industries</a>
