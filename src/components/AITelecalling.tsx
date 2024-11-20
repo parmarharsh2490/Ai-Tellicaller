@@ -91,52 +91,52 @@ import  { useState } from 'react';
 const industries = [
   {
     label: 'Healthcare and Medical Practices',
-    image: 'https://s3-alpha-sig.figma.com/img/4403/b3f1/979dba6c83b1d1ff56312525d5f2d530?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oar3zjB42~ZjnOR7j2mgC0yBsIymnOYuSdCyt5yoQ66YIX8Mp1cwTof-F2~-WXQQU5HCpIImULpUYAb2sZffEDDBTgJ2NQBkH7cQqvzfNE6ALx41dLFY836dIejccWiruILz5EgqFqKcMAAszka~hTA2Me4Qsgxq67OwR4h4RjHs3Qg6ypB1EANsxmv1cKt9fiRTfnudIGghJO0DvvZ1eEayEbPf~TEJChnOsISZxKYnm8Crz9aevS-~8zTissnn1SRYN~ln0HwnwxGbJDaN4BZbZh42Ynyq2oRGyhiv9Y7i2zcza5KUn4oJsKHFX0Gj7onxLh7dEYvF1Ajms~YtoQ__',
+    image: '/aitellicalling1.jpeg',
     description: 'Provide appointment scheduling, answer basic health questions, and manage patient records. Dialoft AI can handle appointment reminders and cancellations, freeing up staff for other tasks. It can also access and update patient records securely.'
   },
   {
     label: 'Real Estate',
-    image: 'https://s3-alpha-sig.figma.com/img/4403/b3f1/979dba6c83b1d1ff56312525d5f2d530?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oar3zjB42~ZjnOR7j2mgC0yBsIymnOYuSdCyt5yoQ66YIX8Mp1cwTof-F2~-WXQQU5HCpIImULpUYAb2sZffEDDBTgJ2NQBkH7cQqvzfNE6ALx41dLFY836dIejccWiruILz5EgqFqKcMAAszka~hTA2Me4Qsgxq67OwR4h4RjHs3Qg6ypB1EANsxmv1cKt9fiRTfnudIGghJO0DvvZ1eEayEbPf~TEJChnOsISZxKYnm8Crz9aevS-~8zTissnn1SRYN~ln0HwnwxGbJDaN4BZbZh42Ynyq2oRGyhiv9Y7i2zcza5KUn4oJsKHFX0Gj7onxLh7dEYvF1Ajms~YtoQ__',
+    image: '/aitellicalling2.jpeg',
     description: 'Generate leads, schedule appointments, and answer property-related inquiries. Dialoft AI can qualify leads based on pre-defined criteria using demographic analysis and validation. It can also integrate with CRM systems to provide automated follow-ups.'
   },
   {
     label: 'Financial Services',
-    image: 'https://s3-alpha-sig.figma.com/img/4403/b3f1/979dba6c83b1d1ff56312525d5f2d530?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oar3zjB42~ZjnOR7j2mgC0yBsIymnOYuSdCyt5yoQ66YIX8Mp1cwTof-F2~-WXQQU5HCpIImULpUYAb2sZffEDDBTgJ2NQBkH7cQqvzfNE6ALx41dLFY836dIejccWiruILz5EgqFqKcMAAszka~hTA2Me4Qsgxq67OwR4h4RjHs3Qg6ypB1EANsxmv1cKt9fiRTfnudIGghJO0DvvZ1eEayEbPf~TEJChnOsISZxKYnm8Crz9aevS-~8zTissnn1SRYN~ln0HwnwxGbJDaN4BZbZh42Ynyq2oRGyhiv9Y7i2zcza5KUn4oJsKHFX0Gj7onxLh7dEYvF1Ajms~YtoQ__',
+    image: '/aitellicalling3.jpeg',
     description: 'Dialoft AI manages financial services by answering queries about loans, investments, and account management. It can assist with transaction tracking, loan applications, and credit card services. Additionally, it provides personalized financial advice, fraud alerts, and real-time support, ensuring customer confidence and satisfaction.'
   },
   {
     label: 'E-commerce & Retail',
-    image: 'https://s3-alpha-sig.figma.com/img/4403/b3f1/979dba6c83b1d1ff56312525d5f2d530?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oar3zjB42~ZjnOR7j2mgC0yBsIymnOYuSdCyt5yoQ66YIX8Mp1cwTof-F2~-WXQQU5HCpIImULpUYAb2sZffEDDBTgJ2NQBkH7cQqvzfNE6ALx41dLFY836dIejccWiruILz5EgqFqKcMAAszka~hTA2Me4Qsgxq67OwR4h4RjHs3Qg6ypB1EANsxmv1cKt9fiRTfnudIGghJO0DvvZ1eEayEbPf~TEJChnOsISZxKYnm8Crz9aevS-~8zTissnn1SRYN~ln0HwnwxGbJDaN4BZbZh42Ynyq2oRGyhiv9Y7i2zcza5KUn4oJsKHFX0Gj7onxLh7dEYvF1Ajms~YtoQ__',
+    image: '/aitellicalling4.jpeg',
     description: 'Handle customer support, process orders, and manage inventory inquiries. Dialoft AI can assist with product recommendations, order tracking, and returns processing.'
   },
   {
     label: 'Education & Training',
-    image: 'https://s3-alpha-sig.figma.com/img/4403/b3f1/979dba6c83b1d1ff56312525d5f2d530?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oar3zjB42~ZjnOR7j2mgC0yBsIymnOYuSdCyt5yoQ66YIX8Mp1cwTof-F2~-WXQQU5HCpIImULpUYAb2sZffEDDBTgJ2NQBkH7cQqvzfNE6ALx41dLFY836dIejccWiruILz5EgqFqKcMAAszka~hTA2Me4Qsgxq67OwR4h4RjHs3Qg6ypB1EANsxmv1cKt9fiRTfnudIGghJO0DvvZ1eEayEbPf~TEJChnOsISZxKYnm8Crz9aevS-~8zTissnn1SRYN~ln0HwnwxGbJDaN4BZbZh42Ynyq2oRGyhiv9Y7i2zcza5KUn4oJsKHFX0Gj7onxLh7dEYvF1Ajms~YtoQ__',
+    image: '/aitellicalling5.jpeg',
     description: 'Provide student support, schedule classes, and manage registrations. Dialoft AI can answer questions about course offerings and schedules, as well as handle registration and enrollment processes. It can also provide personalized academic support.'
   },
   {
     label: 'Hotel',
-    image: 'https://s3-alpha-sig.figma.com/img/4403/b3f1/979dba6c83b1d1ff56312525d5f2d530?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oar3zjB42~ZjnOR7j2mgC0yBsIymnOYuSdCyt5yoQ66YIX8Mp1cwTof-F2~-WXQQU5HCpIImULpUYAb2sZffEDDBTgJ2NQBkH7cQqvzfNE6ALx41dLFY836dIejccWiruILz5EgqFqKcMAAszka~hTA2Me4Qsgxq67OwR4h4RjHs3Qg6ypB1EANsxmv1cKt9fiRTfnudIGghJO0DvvZ1eEayEbPf~TEJChnOsISZxKYnm8Crz9aevS-~8zTissnn1SRYN~ln0HwnwxGbJDaN4BZbZh42Ynyq2oRGyhiv9Y7i2zcza5KUn4oJsKHFX0Gj7onxLh7dEYvF1Ajms~YtoQ__',
+    image: '/aitellicalling6.jpeg',
     description: 'Dialoft AI enhances the hospitality experience by assisting guests with booking accommodation needs, handle check-in/check-out procedures, and provide recommendations based on their preferences. It can help with room service requests, address guest inquiries and provide local travel tips. Guides can handle early check-in submissions, ensuring a seamless and personalized stay.'
   },
   {
     label: 'SaaS',
-    image: 'https://s3-alpha-sig.figma.com/img/4403/b3f1/979dba6c83b1d1ff56312525d5f2d530?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oar3zjB42~ZjnOR7j2mgC0yBsIymnOYuSdCyt5yoQ66YIX8Mp1cwTof-F2~-WXQQU5HCpIImULpUYAb2sZffEDDBTgJ2NQBkH7cQqvzfNE6ALx41dLFY836dIejccWiruILz5EgqFqKcMAAszka~hTA2Me4Qsgxq67OwR4h4RjHs3Qg6ypB1EANsxmv1cKt9fiRTfnudIGghJO0DvvZ1eEayEbPf~TEJChnOsISZxKYnm8Crz9aevS-~8zTissnn1SRYN~ln0HwnwxGbJDaN4BZbZh42Ynyq2oRGyhiv9Y7i2zcza5KUn4oJsKHFX0Gj7onxLh7dEYvF1Ajms~YtoQ__',
+    image: '/aitellicalling7.jpeg',
     description: 'Dialoft AI simplifies SaaS customer support by providing instant answers about subscription plans, pricing, and features. It can assist with onboarding, troubleshoot issues, and guide users through product tutorials. With proactive notifications and personalized recommendations, Dialoft AI enhances user experiences and improves customer retention.'
   },
   {
     label: 'Home Services',
-    image: 'https://s3-alpha-sig.figma.com/img/4403/b3f1/979dba6c83b1d1ff56312525d5f2d530?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oar3zjB42~ZjnOR7j2mgC0yBsIymnOYuSdCyt5yoQ66YIX8Mp1cwTof-F2~-WXQQU5HCpIImULpUYAb2sZffEDDBTgJ2NQBkH7cQqvzfNE6ALx41dLFY836dIejccWiruILz5EgqFqKcMAAszka~hTA2Me4Qsgxq67OwR4h4RjHs3Qg6ypB1EANsxmv1cKt9fiRTfnudIGghJO0DvvZ1eEayEbPf~TEJChnOsISZxKYnm8Crz9aevS-~8zTissnn1SRYN~ln0HwnwxGbJDaN4BZbZh42Ynyq2oRGyhiv9Y7i2zcza5KUn4oJsKHFX0Gj7onxLh7dEYvF1Ajms~YtoQ__',
+    image: '/aitellicalling8.jpeg',
     description: 'Dialoft AI simplifies home service management by offering efficient solutions to schedule services, track technician progress, coordinate site visits, and handle billing and payments. It automates reminders and service follow-ups, and provides personalized recommendations based on service history. For service providers, it ensures seamless communication between customers and service providers, enhancing satisfaction and reliability.'
   },
   {
     label: 'Travels & Hospitality',
-    image: 'https://s3-alpha-sig.figma.com/img/4403/b3f1/979dba6c83b1d1ff56312525d5f2d530?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oar3zjB42~ZjnOR7j2mgC0yBsIymnOYuSdCyt5yoQ66YIX8Mp1cwTof-F2~-WXQQU5HCpIImULpUYAb2sZffEDDBTgJ2NQBkH7cQqvzfNE6ALx41dLFY836dIejccWiruILz5EgqFqKcMAAszka~hTA2Me4Qsgxq67OwR4h4RjHs3Qg6ypB1EANsxmv1cKt9fiRTfnudIGghJO0DvvZ1eEayEbPf~TEJChnOsISZxKYnm8Crz9aevS-~8zTissnn1SRYN~ln0HwnwxGbJDaN4BZbZh42Ynyq2oRGyhiv9Y7i2zcza5KUn4oJsKHFX0Gj7onxLh7dEYvF1Ajms~YtoQ__',
+    image: '/aitellicalling9.jpeg',
     description: 'Dialoft AI elevates travel and hospitality services by offering personalized travel suggestions, booking accommodations, and planning itineraries. It can answer queries about destinations, transportation options, and hotel amenities. Additionally, it ensures a seamless experience by managing cancellations, rescheduling, and providing real-time updates.'
   },
   {
     label: 'Insurance Companies',
-    image: 'https://s3-alpha-sig.figma.com/img/4403/b3f1/979dba6c83b1d1ff56312525d5f2d530?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oar3zjB42~ZjnOR7j2mgC0yBsIymnOYuSdCyt5yoQ66YIX8Mp1cwTof-F2~-WXQQU5HCpIImULpUYAb2sZffEDDBTgJ2NQBkH7cQqvzfNE6ALx41dLFY836dIejccWiruILz5EgqFqKcMAAszka~hTA2Me4Qsgxq67OwR4h4RjHs3Qg6ypB1EANsxmv1cKt9fiRTfnudIGghJO0DvvZ1eEayEbPf~TEJChnOsISZxKYnm8Crz9aevS-~8zTissnn1SRYN~ln0HwnwxGbJDaN4BZbZh42Ynyq2oRGyhiv9Y7i2zcza5KUn4oJsKHFX0Gj7onxLh7dEYvF1Ajms~YtoQ__',
+    image: '/aitellicalling10.jpeg',
     description: 'Handle policy inquiries, provide information, and guide customers through the process. Dialoft AI can collect initial claim information and route it to the appropriate department. It can also answer frequently asked questions about policy coverage and benefits.'
   }
 ];
