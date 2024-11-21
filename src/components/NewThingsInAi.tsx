@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom"
+
 const NewThingsInAi = () => {
+  const navigate = useNavigate();
   return (
    <div className='flex flex-col items-center justify-center'>
      <div className="flex p-5 items-center flex-col md:flex-row justify-center max-w-7xl sm:mr-5">
@@ -9,7 +12,7 @@ const NewThingsInAi = () => {
       <h1 className="text-start text-2xl md:text-3xl font-bold w-full">New Things In AI</h1>
       <p className="mt-4">The AI telecaller on this website has transformed our business communication! In eu rhoncus urna, it provides seamless call handling and keeps our clients informed with efficient updates. Facilisis quisque orci lectus sed nulla; the AI's performance is smooth and highly responsive, making it easy for our team to manage inquiries. Amet, consectetur adipiscing elit, the tool's adaptability to our business needs is impressive. Overall, an excellent addition to our operations—would highly recommend!</p>
       <div className="flex items-start justify-start mt-10 w-full">
-      <button className="border md:py-3 py-2 px-3 rounded-xl md:px-6 max-w-40">Read More</button>
+      <button onClick={() => navigate('/blog3')} className="border md:py-3 py-2 px-3 rounded-xl md:px-6 max-w-40">Read More</button>
       </div>
     </div>
   </div>
@@ -22,7 +25,7 @@ const NewThingsInAi = () => {
            <div className="p-3 flex flex-col items-start justify-center gap-4">
            <h1 className="font-bold text-2xl md:text-3xl">New Things In AI</h1>
             <p className="">The AI telecaller on this website has transformed our business communication! In eu rhoncus urna, it provides seamless call </p>
-            <button className="border md:py-3 py-1 px-3 rounded-xl md:px-6 max-w-40">Read More</button>
+            <button onClick={() => navigate('/blog3')}  className="border md:py-3 py-1 px-3 rounded-xl md:px-6 max-w-40">Read More</button>
            </div>
           </div>
           <div className="flex flex-col sm:max-w-sm ">
@@ -33,7 +36,7 @@ const NewThingsInAi = () => {
            <div className="p-3 flex flex-col items-start justify-center gap-4">
            <h1 className="font-bold text-2xl md:text-3xl">New Things In AI</h1>
             <p className="">The AI telecaller on this website has transformed our business communication! In eu rhoncus urna, it provides seamless call </p>
-            <button className="border md:py-3 py-1 px-3 rounded-xl md:px-6 max-w-40">Read More</button>
+            <button onClick={() => navigate('/blog3')}  className="border md:py-3 py-1 px-3 rounded-xl md:px-6 max-w-40">Read More</button>
            </div>
           </div>
           <div className="flex flex-col sm:max-w-sm ">
@@ -44,7 +47,7 @@ const NewThingsInAi = () => {
            <div className="p-3 flex flex-col items-start justify-center gap-4">
            <h1 className="font-bold text-2xl md:text-3xl">New Things In AI</h1>
             <p className="">The AI telecaller on this website has transformed our business communication! In eu rhoncus urna, it provides seamless call </p>
-            <button className="border md:py-3 py-1 px-3 rounded-xl md:px-6 max-w-40">Read More</button>
+            <button onClick={() => navigate('/blog4')}  className="border md:py-3 py-1 px-3 rounded-xl md:px-6 max-w-40">Read More</button>
            </div>
           </div>
           
