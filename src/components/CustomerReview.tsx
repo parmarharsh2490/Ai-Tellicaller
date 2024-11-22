@@ -61,22 +61,22 @@ const handleNext = () => {
       <h2 className="text-3xl font-bold mb-8 text-left w-full pl-10">
           Customer Review
         </h2>
-    <div className="flex items-center justify-around max-w-7xl mx-auto">
+    <div className="flex items-center justify-around max-w-7xl mx-auto overflow-hidden">
       <div className="">
         <button  onClick={handlePrevious} className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition">
           <span  className="text-white text-2xl">&lt;</span>
         </button>
       </div>
       <div
-        className="bg-black flex flex-col items-center justify-center p-8 relative"
+        className="bg-black flex flex-col items-center justify-center sm:p-8 relative"
       >
         {/* Wave Decoration - Top Right */}
-        <div className="absolute -top-4 -right-28 z-0">
+        <div className="hidden sm:block absolute -top-4 -right-28 z-0">
           <WaveDecoration2 />
         </div>
         {/* Review Box */}
-        <div className="z-10 relative w-full max-w-lg p-4 sm:p-12 bg-gradient-to-b from-gray-900 to-gray-900 rounded-lg shadow-lg text-center">
-          <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+        <div className="z-10 bg-image2 sm:min-h-80 min-h-[320px]  sm:relative w-full max-w-lg p-4 sm:p-12  shadow-lg text-center">
+          <p className="text-gray-300 text-xs sm:text-base leading-relaxed">
             {reviews[selectedIndex].description}
           </p>
          
@@ -85,7 +85,7 @@ const handleNext = () => {
             <WaveDecoration1 />
           </div>
           {/* Profile Section */}
-        <div className="flex w-full max-w-4xl items-start justify-start relative -top-4 left-7 sm:left-4 z-10">
+        <div className="flex w-full max-w-4xl items-start justify-start relative sm:-top-11 top-7 left-0 sm:left-2 z-10">
           <div className="flex flex-col">
             <img
             src={reviews[selectedIndex].image}
@@ -99,7 +99,7 @@ const handleNext = () => {
           </div>
           
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 mt-10 sm:mt-0">
             <span className="w-3 h-3 rounded-full bg-gray-500"></span>
             <span className="w-3 h-3 rounded-full bg-teal-400"></span>
             <span className="w-3 h-3 rounded-full bg-gray-500"></span>
