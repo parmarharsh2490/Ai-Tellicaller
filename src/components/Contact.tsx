@@ -1,9 +1,9 @@
 import { FaEnvelope, FaPhone, FaHome, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
-    <div className="bg-black sm:ml-10 text-white sm:p-8 p-4 rounded-lg max-w-2xl">
+    <div className="bg-black text-white flex items-center justify-center flex-col w-full sm:p-8 p-4 rounded-lg">
       {/* Title */}
-      <h1 className="text-2xl font-bold mb-6 font-helvetica">Contact Us</h1>
+      <h1 className="text-2xl font-bold mb-6">Contact Us</h1>
 
       {/* Contact Details */}
       <div className="space-y-6">

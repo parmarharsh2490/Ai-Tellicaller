@@ -7,6 +7,7 @@ module.exports = {
         '54': '54px',
       },
       fontFamily: {
+          sans: ['DM Sans', 'sans-serif'], // Replace default or add as new
         helvetica: [
           "Helvetica Neue",
           "Helvetica",
