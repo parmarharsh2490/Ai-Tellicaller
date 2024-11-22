@@ -1,14 +1,16 @@
-import React from 'react';
-import { Clock, DollarSign, Cog, Activity, BarChart3, LineChart } from 'lucide-react';
-
-const FeatureCard = ({ icon: Icon, title, description }: { 
-  icon: React.ElementType, 
+const FeatureCard = ({ imageUrl, title, description }: { 
+  imageUrl: string, 
   title: string, 
   description: string[] 
 }) => (
   <div className="p-6 rounded-lg border border-gray-800 bg-black/40 backdrop-blur-sm hover:border-purple-500/50 transition-all duration-300">
     <div className="mb-4">      
-      <Icon className="w-8 h-8 text-purple-500" />
+      <img src={imageUrl} 
+ className="w-12 h-12"
+  style={{
+    filter: 'invert(21%) sepia(95%) saturate(5434%) hue-rotate(275deg) brightness(97%) contrast(123%)'
+  }}
+      alt={title} />
     </div>
     <h3 className="text-lg font-semibold mb-2 text-start">{title}</h3>
    <ul className='pl-6'>
@@ -22,88 +24,66 @@ const FeatureCard = ({ icon: Icon, title, description }: {
 );
 
 
-const StatCard = ({ value, label, color }: { value: string; label: string; color: string }) => (
-    <div className="flex items-center gap-6">
-      <div>
-        <div className={`text-xl sm:text-2xl md:text-5xl font-bold ${color}`}>
-          {value}
-        </div>
-        <div className="mt-2 text-xs  text-center" style={{color : "#C4C4C4"}}>
-          {label}
-        </div>
-      </div>
-      
-      {/* Gradient Divider */}
-      {value !== "50%" && <div className="h-16 w-[2.54px] bg-gradient-to-b from-transparent via-white to-transparent opacity-20"></div>}
-    </div>
-  );
-  
+
 
 const Feature = () => {
-const features = [
+  const features = [
     {
-        icon: Clock,
+        imageUrl: "/24_7.png",
         title: "24/7 Availability",
         description: [
-            "Always there when you need it.",
-            "No nights or weekends off.",
-            "Cost effective service 24/7, at a fraction of the cost."
+            "Ensure Your Customer Can Reach You Anytime Never Miss A Call",
+            "Handle Inquiries, Booking And Support Around The Clock"
         ]
     },
     {
-        icon: DollarSign,
+        imageUrl: "/cost_savings.png",
         title: "Cost Saving",
         description: [
-            "Reduce operational costs with 24/7 Service.",
-            "Manage human agents efficiently at a fraction of the cost."
+            "Reduce Overhead Of Hiring, Training, And Managing Human Agents",
+            "Provide Premium Customer Service At A Fraction Of The Cost"
         ]
     },
     {
-        icon: Cog,
+        imageUrl: "/features4.png",
         title: "Efficiency",
         description: [
-            "Smart automation helps you save time.",
-            "Increase productivity and drive real business results."
+            "Automate Simple Tasks Like Lead Qualification, Scheduling, And Follow-Up",
+            "Boost Productivity And Free Up Your Team To Focus On Higher Value Work"
         ]
     },
     {
-        icon: Activity,
+        imageUrl: "/featues3.png",
         title: "Actionable Capabilities",
         description: [
-            "Take real action like scheduling appointments and making bank transfers.",
-            "Not just answering questions but taking real actions."
+            "Manage Customer Accounts, Schedule Appointments, And Transfer Calls",
+            "Deliver A Consistent, Omni-Channel Experience Across Multiple Channels"
         ]
     },
     {
-        icon: BarChart3,
+        imageUrl: "/features5.png",
         title: "Scalability",
         description: [
-            "Scale up or down as needed with our AI Phone Agents.",
-            "Perfect for managing varying call volumes across your business hours."
+            "Easily Handle High Call Volumes Without Adding More Agents",
+            "Seamlessly Scale Your Telecalling Capacity As Your Business Grows"
         ]
     },
     {
-        icon: LineChart,
-        title: "Advanced Analytics and Insights",
+        imageUrl: "/advance-analytics.png",
+        title: "Advance Analytics and Insights",
         description: [
-            "Get deep insights into customer interactions, trends, and performance metrics.",
-            "Continuously improve your service."
+            "Track Calls, Review Recordings, And View AI-Generated Summaries On A Comprehensive Dashboard",
+            "Analyze Conversation Trends, Customer Sentiment, And Call Team Style"
         ]
     }
 ];
-
-  const stats = [
-    { value: "500X", label: "MORE EFFICIENT", color : "gradient-text-alt-1" },
-    { value: "Zero", label: "WAITING TIME", color : "gradient-text-alt-2" },
-    { value: "120,000+", label: "COMPLETED CALLS AND COUNTING", color : "gradient-text-alt-3"  },
-    { value: "50%", label: "ROI IN 30 DAYS", color : "gradient-text-alt-4"}
-  ];
+  
 
   return (
-    <div className="w-full bg-black text-white">
+    <div className="w-full bg-black text-white mt-10 sm:mt-16">
       {/* Features Section */}
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl font-helvetica md:text-4xl font-bold text-center mb-12">
           Features
         </h2>
         
@@ -111,31 +91,12 @@ const features = [
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
-              icon={feature.icon}
+              imageUrl={feature.imageUrl}
               title={feature.title}
               description={feature.description}
             />
           ))}
-        </div>
-
-        {/* Dialoft AI in Numbers Section */}
-        <div className=''>
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Dialoft AI In{' '}
-            <span className="text-blue-500">Numbers</span>
-          </h2>
-          
-          <div className="flex items-center gap-2 sm:gap-12 justify-center">
-            {stats.map((stat, index) => (
-              <StatCard
-                key={index}
-                value={stat.value}
-                label={stat.label}
-                color={stat.color}
-              />
-            ))}
-          </div>
-        </div>
+        </div>      
       </div>
     </div>
   );

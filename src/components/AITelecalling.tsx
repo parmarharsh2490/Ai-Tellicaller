@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import  { useRef, useState } from 'react';
 
 const industries = [
   {
@@ -72,7 +72,15 @@ const IndustryLabel = ({ label, isActive, onClick }: IndustryLabelProps) => (
 
 const AiTelecallingComponent = () => {
   const [selectedIndustry, setSelectedIndustry] = useState(industries[0]);
+  const descriptionRef = useRef<HTMLDivElement | null>(null);
 
+  const handleLabelClick = (industry: typeof industries[0]) => {
+    setSelectedIndustry(industry);
+    // Scroll to the description section smoothly
+    if (window.innerWidth <= 768) {
+      descriptionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   return (
     <div
     style={{
@@ -86,30 +94,30 @@ const AiTelecallingComponent = () => {
     }}
      className="bg-black text-white w-full min-h-screen">
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
-          <div className="mb-8 md:mb-0">
-            <h1 className="text-4xl font-bold">AI Telecalling</h1>
-            <h2 className="text-teal-400 text-4xl">Across Industries</h2>
+        <div className="flex flex-col md:flex-row justify-between items-start mb-8">
+          <div className="mb-8 md:mb-0 md:w-[50%] w-full flex flex-col items-center md:items-start justify-center">
+            <h1 className="sm:text-5xl text-4xl font-bold">AI Telecalling</h1>
+            <h2 className="text-teal-400 text-4xl sm:text-5xl">Across Industries</h2>
           </div>
-          <div className="flex flex-wrap gap-2 max-w-full md:max-w-[60%]">
+          <div className="flex flex-wrap gap-2 max-w-full ml-10 md:max-w-[57%]">
             {industries.map((industry) => (
               <IndustryLabel
                 key={industry.label}
                 label={industry.label}
                 isActive={selectedIndustry.label === industry.label}
-                onClick={() => setSelectedIndustry(industry)}
+                onClick={() => handleLabelClick(industry)}
               />
             ))}
           </div>
         </div>
 
-        <div className="mt-12  rounded-lg">
+        <div className="mt-12  rounded-lg" ref={descriptionRef}>
           <div className="flex flex-col md:flex-row gap-8">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-[40%]">
               <img
                 src={selectedIndustry.image}
                 alt={selectedIndustry.label}
-                className="w-full rounded-lg object-cover h-96"
+                className="w-full rounded-3xl object-cover sm:h-96 h-60"
               />
             </div>
             <div className="w-full md:w-1/2">

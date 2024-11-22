@@ -6,6 +6,7 @@ import Feature from "../components/Feature";
 import Navigation from "../components/Navigation";
 import NewThingsInAi from "../components/NewThingsInAi";
 import TrustedBy from "../components/TrustedBy";
+import DialoftAI from "./DialoftAI";
 const Home = () => {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -38,6 +39,7 @@ const Home = () => {
         <TrustedBy/>
         <Feature />
       </div>
+      <DialoftAI/>
       <AITelecalling />
       <CustomerReview />
       <NewThingsInAi />
