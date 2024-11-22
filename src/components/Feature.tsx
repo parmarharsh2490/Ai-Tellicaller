@@ -80,9 +80,9 @@ const Feature = () => {
   
 
   return (
-    <div className="w-full bg-black text-white mt-10 sm:mt-16">
+    <div className="w-full bg-black text-white bg-image mt-0">
       {/* Features Section */}
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto   mt-10 sm:mt-24 ">
         <h2 className="text-3xl font-helvetica md:text-4xl font-bold text-center mb-12">
           Features
         </h2>

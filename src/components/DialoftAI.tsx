@@ -21,7 +21,7 @@ const DialoftAI = () => {
         { value: "50%", label: "ROI IN 30 DAYS", color : "gradient-text-alt-4"}
       ];
   return (
-    <div className='flex flex-col mb-14'>
+    <div className='flex flex-col sm:mb-20 mb-14'>
     {/* <div className="bg-[#dc8de6] absolute right-0 w-[50%] h-[100px] blur blur-4xl z-0"></div> */}
     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
       Dialoft AI In{' '}
