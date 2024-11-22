@@ -11,16 +11,20 @@ const Home = () => {
     <div className="min-h-screen bg-black text-white">
     <Navigation />
     <main className="relative">
+    <div className="absolute flex items-center justify-center gap-10 top-0 left-0 overflow-hidden">
+        <img className="w-[50%] relative scale-125 -left-40" src="https://s3-alpha-sig.figma.com/img/9577/caca/18dc7bbbafd23d2f87e0d55115de2444?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NroNm8JYxXh9r~jLthm6FLJwlOC3HMVoKOiNDLcDqX9EXRCVAElL1YkbPlBk6LFlqcqxY47ObxAcLQSEoTNEAg198f05ay0Kob3IDiggS12~P5YyUeEF5vk-2~9ntjW5zfOUcDwyH4uc7MxbsbPGYTjBk3HPnvtzxHcfg-ixRdCtLqB21eUvWYLD1zPdP7mEkeemoCgxdMlwtS3Hua2c5P99gUx8BCIhErpiXbxqkyhLgmcP5QhC6xfVgJ24i~7wqACSnUv57dZVO-MCxXqOeGJt5Pm3~KSdaZpUKccyj~On2Dve~h0Zk1~Ppds3ANiANyfbH7CejxchYjKad5TQog__" alt="" />
+        <img className="w-[50%] relative scale-125  -right-40" src="https://s3-alpha-sig.figma.com/img/9577/caca/18dc7bbbafd23d2f87e0d55115de2444?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NroNm8JYxXh9r~jLthm6FLJwlOC3HMVoKOiNDLcDqX9EXRCVAElL1YkbPlBk6LFlqcqxY47ObxAcLQSEoTNEAg198f05ay0Kob3IDiggS12~P5YyUeEF5vk-2~9ntjW5zfOUcDwyH4uc7MxbsbPGYTjBk3HPnvtzxHcfg-ixRdCtLqB21eUvWYLD1zPdP7mEkeemoCgxdMlwtS3Hua2c5P99gUx8BCIhErpiXbxqkyhLgmcP5QhC6xfVgJ24i~7wqACSnUv57dZVO-MCxXqOeGJt5Pm3~KSdaZpUKccyj~On2Dve~h0Zk1~Ppds3ANiANyfbH7CejxchYjKad5TQog__" alt="" />
+      </div>
       <div className="relative max-w-7xl mx-auto px-4 py-10 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">
+        <h1 className="text-white sm:mt-20 font-helvetica text-4xl sm:text-[55px] md:text-[70px] leading-[1.27] tracking-[0px]">
           Transform Your Business With AI Phone Agents That{" "}
-          <div className="word inline-block text-5xl">
-            <span style={{ color: "#8C01FA" }} className="text-5xl block">Boost Business</span>
-            <span style={{ color: "#8C01FA" }} className="text-5xl block">Engineers</span>
-            <span style={{ color: "#8C01FA" }} className="text-5xl block">Doctors</span>
+          <div className="word inline-block text-4xl sm:text-[50px]">
+            <span style={{ color: "#8C01FA" }} className=" block">Boost Business</span>
+            <span style={{ color: "#8C01FA" }} className=" block">Engineers</span>
+            <span style={{ color: "#8C01FA" }} className="block">Doctors</span>
           </div>
         </h1>
-        <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-xl mx-auto">
+        <p className="sm:text-lg text-sm font-helvetica md:text-xl text-gray-300 mb-8 max-w-xl mx-auto">
           Experience the future of customer communication with AI agents that
           sound indistinguishable from humans, available 24/7 at a fraction of
           the cost.
