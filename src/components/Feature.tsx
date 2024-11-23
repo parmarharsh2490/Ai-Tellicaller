@@ -13,11 +13,11 @@ const FeatureCard = ({ imageUrl, title, description }: {
   }}
       alt={title} />
     </div>
-    <h3 className="text-lg font-semibold mb-2 text-start">{title}</h3>
+    <h3 className="text-lg font-helvetica font-semibold mb-2 text-start">{title}</h3>
    <ul className='pl-6'>
    {
         description.map((description,descriptionIndex) => (
-            <li key={descriptionIndex} className="text-gray-400 text-sm text-start list-disc">{description}</li>
+            <li key={descriptionIndex} className="text-gray-400 font-helvetica text-sm text-start list-disc">{description}</li>
         ))
     }
    </ul>

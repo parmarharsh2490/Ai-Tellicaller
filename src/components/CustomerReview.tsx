@@ -58,7 +58,7 @@ const handleNext = () => {
   return (
     <>
       {/* Title */}
-      <h2 className="text-3xl font-bold mb-8 text-left w-full pl-10">
+      <h2 className="text-3xl font-helvetica font-bold mb-8 text-left w-full pl-10">
           Customer Review
         </h2>
     <div className="flex items-center justify-around max-w-7xl mx-auto overflow-hidden">
@@ -76,7 +76,7 @@ const handleNext = () => {
         </div>
         {/* Review Box */}
         <div className="z-10 bg-image2 sm:min-h-80 min-h-[320px]  sm:relative w-full max-w-lg p-4 sm:p-12  shadow-lg text-center">
-          <p className="text-gray-300 text-xs sm:text-base leading-relaxed">
+          <p className="text-gray-300 font-sans text-xs sm:text-base leading-relaxed">
             {reviews[selectedIndex].description}
           </p>
          
@@ -93,8 +93,8 @@ const handleNext = () => {
               alt="Profile"
               className="w-20 h-20 rounded-full border-2 border-gray-500 object-cover"
             />
-            <h3 className="mt-4 text-sm sm:text-lg font-semibold">{reviews[selectedIndex].name}</h3>
-            <p className="text-xs sm:text-sm text-gray-400">
+            <h3 className="mt-4 font-sans text-sm sm:text-lg font-semibold">{reviews[selectedIndex].name}</h3>
+            <p className="text-xs font-sans sm:text-sm text-gray-400">
             {reviews[selectedIndex].position}
             </p>
           </div>

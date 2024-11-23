@@ -61,7 +61,7 @@ interface IndustryLabelProps {
 
 const IndustryLabel = ({ label, isActive, onClick }: IndustryLabelProps) => (
   <button
-    className={`border text-xs sm:text-sm h-auto w-auto p-2 sm:p-3 uppercase rounded-full whitespace-nowrap transition-all ${
+    className={`border font-roboto text-xs sm:text-sm h-auto w-auto p-2 sm:p-3 uppercase rounded-full whitespace-nowrap transition-all ${
       isActive ? 'border-teal-500 bg-teal-500/10' : 'border-gray-700 hover:border-purple-500/50'
     }`}
     onClick={onClick}
@@ -96,8 +96,8 @@ const AiTelecallingComponent = () => {
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-start mb-8">
           <div className="mb-8 md:mb-0 md:w-[50%] w-full flex flex-col items-center md:items-start justify-center">
-            <h1 className="sm:text-5xl text-4xl font-bold">AI Telecalling</h1>
-            <h2 className="text-teal-400 text-4xl sm:text-5xl">Across Industries</h2>
+            <h1 className="sm:text-5xl text-4xl font-bold font-helvetica">AI Telecalling</h1>
+            <h2 className="text-teal-400 text-4xl sm:text-5xl font-helvetica">Across Industries</h2>
           </div>
           <div className="flex flex-wrap gap-2 max-w-full ml-10 md:max-w-[57%]">
             {industries.map((industry) => (
@@ -121,8 +121,8 @@ const AiTelecallingComponent = () => {
               />
             </div>
             <div className="w-full md:w-1/2">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-4">{selectedIndustry.label}</h2>
-              <p className="text-gray-300 text-sm sm:text-lg leading-relaxed">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-helvetica">{selectedIndustry.label}</h2>
+              <p className="text-gray-300 text-sm sm:text-lg font-helvetica leading-relaxed">
                 {selectedIndustry.description}
               </p>
             </div>

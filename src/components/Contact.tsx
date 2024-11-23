@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <div className="bg-black text-white flex items-center justify-center flex-col w-full sm:p-8 p-4 rounded-lg">
       {/* Title */}
-      <h1 className="text-2xl sm:text-4xl font-bold mb-6">Contact Us</h1>
+      <h1 className="text-2xl sm:text-4xl font-bageta font-bold mb-6">Contact Us</h1>
 
       {/* Contact Details */}
       <div className="space-y-6">
@@ -20,7 +20,7 @@ const Contact = () => {
               fillOpacity="0.8"
             />
           </svg>
-          <span className="text-gray-300 text-sm">Manthan</span>
+          <span className="text-gray-300 text-sm font-helvetica">Manthan</span>
         </div>
 
         {/* Phone */}
@@ -37,7 +37,7 @@ const Contact = () => {
               fillOpacity="0.8"
             />
           </svg>
-          <span className="text-gray-300 text-sm">8347855047</span>
+          <span className="text-gray-300 text-sm font-helvetica">8347855047</span>
         </div>
 
         {/* Address */}
@@ -58,7 +58,7 @@ const Contact = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <p className="text-gray-300 text-sm">
+            <p className="text-gray-300 text-sm font-helvetica">
               Bring AI telecaller to the forefront. Our solution supports
               seamless interactions for businesses.
             </p>

@@ -18,9 +18,9 @@ const NewThingsInAi = () => {
     className="sm:hidden w-screen  max-h-80 rounded-md"
      src="https://s3-alpha-sig.figma.com/img/d2bf/c323/360b877ce3514fd0bc829f06a0c4e8f5?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oiReCtvwb-fN60uMFpPn2b3-LRbN3v7eHTb9r588E4T8aOUaa3ck8v3~0kRWiBv5zflonZYmh13EklpDZ-V~pxqQqCJPLpPjfaag95Aa43nafDHesU2knAnaf1lg4tk98UYT3xjXhYnrrCdUNgna8D7M2xaLFSLRRPS1OzT1-AQMLMmNB6k34EQv3gHgXxvO9oZ36mPtDsMAV8yE0LIyyvnY1zoZ7jtSq10GrRvI8dpWlCanDPdF6GQpwej9IILuAURpl1hMiXtzk0Fhxqk1Pg0Rask-U4lIjMDaSMyw9tSoB7deRBU-YYNCrJveSo3DVfiakXt1n2xNmcaon~3hhQ__" alt="" />
     <div className="flex  flex-col mt-2 items-center justify-center px-3 sm:px-6">
-      <h1 className="hidden sm:block text-start text-2xl md:text-3xl font-bold w-full font-helvetica my-2">Blogs</h1>
+      <h1 className="hidden  sm:block text-start text-2xl md:text-3xl font-bold w-full font-helvetica my-2">Blogs</h1>
       <h1 className="text-start text-2xl md:text-3xl font-bold w-full font-helvetica">New Things In AI</h1>
-      <p className="mt-4 text-sm md:text-[14px] xl:text-[16px] leading-2">{description}</p>
+      <p className="mt-4 font-sans text-sm md:text-[14px] xl:text-[16px] leading-2">{description}</p>
       <div className="flex items-start justify-start mt-4 w-full">
       <button onClick={() => navigate('/blog3')} className="border md:py-3 py-2 px-3 rounded-xl md:px-6 max-w-40">Read More</button>
       </div>

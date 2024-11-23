@@ -4,7 +4,7 @@ const StatCard = ({ value, label, color }: { value: string; label: string; color
       <div className={`text-xl font-helvetica text-center sm:text-2xl md:text-5xl font-bold ${color}`}>
         {value}
       </div>
-      <div className="mt-2 text-[10px] uppercase tracking-wider font-roboto text-center" style={{color: "#C4C4C4"}}>
+      <div className="mt-2 text-[10px] font-roboto uppercase tracking-wider font-roboto text-center" style={{color: "#C4C4C4"}}>
         {label}
       </div>
     </div>
@@ -16,12 +16,12 @@ const StatCard = ({ value, label, color }: { value: string; label: string; color
 );
 
 const DialoftAI = () => {
-  const stats = [
-    { value: "500X", label: "MORE EFFICIENT", color: "text-[#00FFBB]" },
-    { value: "Zero", label: "WAITING TIME", color: "text-[#00FFBB]" },
-    { value: "120,000+", label: "COMPLETED CALLS AND COUNTING", color: "text-[#2B7FFF]" },
-    { value: "50%", label: "ROI IN 30 DAYS", color: "text-[#00FFBB]" }
-  ];
+    const stats = [
+      { value: "500X", label: "MORE EFFICIENT", color : "gradient-text-alt-1" },
+      { value: "Zero", label: "WAITING TIME", color : "gradient-text-alt-2" },
+      { value: "120,000+", label: "COMPLETED CALLS AND COUNTING", color : "gradient-text-alt-3"  },
+      { value: "50%", label: "ROI IN 30 DAYS", color : "gradient-text-alt-4"}
+    ];
 
   return (
     <div className="relative w-full overflow-hidden">
