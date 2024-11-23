@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom"
 import BookDemoButton from "./BookDemoButton"
+import { scrollToBottom } from "."
 
-const Navigation = () => {
+const Navigation = ({descriptionRef} : any) => {
+  const handleClick = () => {
+    descriptionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
   return (
     <nav className="flex justify-between items-center h-[59] p-2 md:p-3  mx-2 sm:mx-4">
     <div className="flex items-center">
@@ -8,14 +13,14 @@ const Navigation = () => {
       {/* <span className="ml-2 text-xl font-bold gradient-text">Dialoft AI</span> */}
     </div>
     <div className= "flex md:hidden text-sm items-center space-x-3 font-helvetica text-gray-300 tracking-wide" style={{color : "#848895"}}>
-    <a href="#" className="hover:text-purple-400">Human VS AI</a>
-    <a href="#" className="hover:text-purple-400">Industries</a>
+    <Link to='/Human-vs-AI' className="hover:text-purple-400">Human VS AI</Link>
+    <a href="#" onClick={handleClick} className="hover:text-purple-400">Industries</a>
     </div>
     <div className="hidden md:flex" style={{gap : "21px"}}>
       <div className="flex items-center  space-x-10 lg:space-x-54 text-lg font-helvetica font-medium" style={{color : "#848895"}}>
-      <a href="#" className="hover:text-purple-400 ">Human VS AI</a>
-      <a href="#" className="hover:text-purple-400 ">Industries</a>
-      <a href="#" className="hover:text-purple-400 ">Contact us</a>
+      <Link to="/Human-vs-AI" className="hover:text-purple-400 ">Human VS AI</Link>
+      <a href="#" onClick={handleClick}  className="hover:text-purple-400 ">Industries</a>
+      <a href="#" onClick={scrollToBottom} className="hover:text-purple-400 ">Contact us</a>
       <a href="#" className="hover:text-purple-400 ">Team</a>
       </div>
       <div className="">

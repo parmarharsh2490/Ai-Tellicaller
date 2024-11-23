@@ -1,4 +1,4 @@
-import  { useRef, useState } from 'react';
+import  {  useState } from 'react';
 
 const industries = [
   {
@@ -70,9 +70,8 @@ const IndustryLabel = ({ label, isActive, onClick }: IndustryLabelProps) => (
   </button>
 );
 
-const AiTelecallingComponent = () => {
+const AiTelecallingComponent = ({descriptionRef} : any) => {
   const [selectedIndustry, setSelectedIndustry] = useState(industries[0]);
-  const descriptionRef = useRef<HTMLDivElement | null>(null);
 
   const handleLabelClick = (industry: typeof industries[0]) => {
     setSelectedIndustry(industry);

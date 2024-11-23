@@ -4,7 +4,7 @@ const StatCard = ({ value, label, color }: { value: string; label: string; color
       <div className={`text-xl font-helvetica text-center sm:text-2xl md:text-5xl font-bold ${color}`}>
         {value}
       </div>
-      <div className="mt-2 text-[10px] font-roboto uppercase tracking-wider font-roboto text-center" style={{color: "#C4C4C4"}}>
+      <div className="mt-2 text-[10px] uppercase tracking-wider font-roboto text-center" style={{color: "#C4C4C4"}}>
         {label}
       </div>
     </div>

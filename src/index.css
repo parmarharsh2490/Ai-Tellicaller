@@ -81,7 +81,7 @@ body {
     height: 50px;
     line-height: 50px; /* Ensures vertical centering */
     /* padding-left: 10px; */
-    animation: spin_words 4s infinite ease-in-out;
+    animation: spin_words 8s infinite ease-in-out;
     text-align: center;
   }
   
@@ -89,11 +89,29 @@ body {
     0% {
       transform: translateY(0);
     }
-    33% {
+    11.11% {
       transform: translateY(-50px);
     }
-    66% {
+    22.22% {
       transform: translateY(-100px);
+    }
+    33.33% {
+      transform: translateY(-150px);
+    }
+    44.44% {
+      transform: translateY(-200px);
+    }
+    55.55% {
+      transform: translateY(-250px);
+    }
+    66.66% {
+      transform: translateY(-300px);
+    }
+    77.77% {
+      transform: translateY(-350px);
+    }
+    88.88% {
+      transform: translateY(-400px);
     }
     100% {
       transform: translateY(0);
