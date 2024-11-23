@@ -42,13 +42,13 @@ body {
 }
 
 .bg-image {
-    background-image: url('/bg-image.png');
+    background-image: url('/bg-image.avif');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 .bg-image2 {
-    background-image: url('/Vector2.png');
+    background-image: url('/Vector2.avif');
     height: 100%;
     width: 100%;
     background-position: center;

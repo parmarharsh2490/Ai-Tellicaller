@@ -1,9 +1,9 @@
 const TrustedBy = () => {
   const logos = [
-    { src: "/google.png", alt: "Google", invert: false },
-    { src: "/Zapier.png", alt: "Zapier", invert: true },
-    { src: "/Twilio.png", alt: "Twilio", invert: true },
-    { src: "/Stripe.png", alt: "Stripe", invert: true },
+    { src: "/google.avif", alt: "Google", invert: false },
+    { src: "/Zapier.avif", alt: "Zapier", invert: true },
+    { src: "/Twilio.avif", alt: "Twilio", invert: true },
+    { src: "/Stripe.avif", alt: "Stripe", invert: true },
     // { src: "/IIElevenLabs.png", alt: "Eleven Labs", invert: true },
     // { src: "/highLevel2.png", alt: "High Level", invert: true },
   ];
@@ -26,14 +26,14 @@ const TrustedBy = () => {
         ))}
         <div className="w-32 h-32">
           <img
-            src="/IIElevenLabs.png"
+            src="/IIElevenLabs.avif"
             className="w-full h-full invert object-contain"
             alt=""
           />
         </div>
         <div className="w-24 sm:w-32 h-12">
           <img
-            src="/highLevel2.png"
+            src="/highLevel2.avif"
             className="w-full h-full invert object-contain"
             alt=""
           />

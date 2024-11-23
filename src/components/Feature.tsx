@@ -30,7 +30,7 @@ const FeatureCard = ({ imageUrl, title, description }: {
 const Feature = () => {
   const features = [
     {
-        imageUrl: "/24_7.png",
+        imageUrl: "/24_7.avif",
         title: "24/7 Availability",
         description: [
             "Ensure Your Customer Can Reach You Anytime Never Miss A Call",
@@ -38,7 +38,7 @@ const Feature = () => {
         ]
     },
     {
-        imageUrl: "/cost_savings.png",
+        imageUrl: "/cost_savings.avif",
         title: "Cost Saving",
         description: [
             "Reduce Overhead Of Hiring, Training, And Managing Human Agents",
@@ -46,7 +46,7 @@ const Feature = () => {
         ]
     },
     {
-        imageUrl: "/features4.png",
+        imageUrl: "/features4.avif",
         title: "Efficiency",
         description: [
             "Automate Simple Tasks Like Lead Qualification, Scheduling, And Follow-Up",
@@ -54,7 +54,7 @@ const Feature = () => {
         ]
     },
     {
-        imageUrl: "/featues3.png",
+        imageUrl: "/featues3.avif",
         title: "Actionable Capabilities",
         description: [
             "Manage Customer Accounts, Schedule Appointments, And Transfer Calls",
@@ -62,7 +62,7 @@ const Feature = () => {
         ]
     },
     {
-        imageUrl: "/features5.png",
+        imageUrl: "/features5.avif",
         title: "Scalability",
         description: [
             "Easily Handle High Call Volumes Without Adding More Agents",
@@ -70,7 +70,7 @@ const Feature = () => {
         ]
     },
     {
-        imageUrl: "/advance-analytics.png",
+        imageUrl: "/advance-analytics.avif",
         title: "Advance Analytics and Insights",
         description: [
             "Track Calls, Review Recordings, And View AI-Generated Summaries On A Comprehensive Dashboard",
