@@ -19,6 +19,7 @@ module.exports = {
           "sans-serif",
         ],
         bageta: ["Bageta", "sans-serif"],
+        roboto: ['Roboto', 'sans-serif'],
       },
     },
   },
