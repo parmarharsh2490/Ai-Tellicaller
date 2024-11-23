@@ -88,6 +88,7 @@ const handleNext = () => {
         <div className="flex w-full max-w-4xl items-start justify-start relative sm:-top-11 top-7 left-0 sm:left-2 z-10">
           <div className="flex flex-col">
             <img
+            loading="lazy"
             src={reviews[selectedIndex].image}
               alt="Profile"
               className="w-20 h-20 rounded-full border-2 border-gray-500 object-cover"

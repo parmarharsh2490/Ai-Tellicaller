@@ -13,8 +13,8 @@ const Home = () => {
     <Navigation />
     <main className="relative">
     <div className="absolute flex items-center justify-center gap-10 top-0 left-0 overflow-hidden">
-        <img className="w-[50%] relative scale-125 -left-40" src="https://s3-alpha-sig.figma.com/img/9577/caca/18dc7bbbafd23d2f87e0d55115de2444?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NroNm8JYxXh9r~jLthm6FLJwlOC3HMVoKOiNDLcDqX9EXRCVAElL1YkbPlBk6LFlqcqxY47ObxAcLQSEoTNEAg198f05ay0Kob3IDiggS12~P5YyUeEF5vk-2~9ntjW5zfOUcDwyH4uc7MxbsbPGYTjBk3HPnvtzxHcfg-ixRdCtLqB21eUvWYLD1zPdP7mEkeemoCgxdMlwtS3Hua2c5P99gUx8BCIhErpiXbxqkyhLgmcP5QhC6xfVgJ24i~7wqACSnUv57dZVO-MCxXqOeGJt5Pm3~KSdaZpUKccyj~On2Dve~h0Zk1~Ppds3ANiANyfbH7CejxchYjKad5TQog__" alt="" />
-        <img className="w-[50%] relative scale-125  -right-40" src="https://s3-alpha-sig.figma.com/img/9577/caca/18dc7bbbafd23d2f87e0d55115de2444?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NroNm8JYxXh9r~jLthm6FLJwlOC3HMVoKOiNDLcDqX9EXRCVAElL1YkbPlBk6LFlqcqxY47ObxAcLQSEoTNEAg198f05ay0Kob3IDiggS12~P5YyUeEF5vk-2~9ntjW5zfOUcDwyH4uc7MxbsbPGYTjBk3HPnvtzxHcfg-ixRdCtLqB21eUvWYLD1zPdP7mEkeemoCgxdMlwtS3Hua2c5P99gUx8BCIhErpiXbxqkyhLgmcP5QhC6xfVgJ24i~7wqACSnUv57dZVO-MCxXqOeGJt5Pm3~KSdaZpUKccyj~On2Dve~h0Zk1~Ppds3ANiANyfbH7CejxchYjKad5TQog__" alt="" />
+        <img fetchPriority="high" loading="eager" className="w-[50%] relative scale-125 -left-40" src="/homepage.jpeg" alt="" />
+        <img fetchPriority="high" loading="eager" className="w-[50%] relative scale-125  -right-40" src="/homepage.jpeg" alt="" />
       </div>
       <div className="relative max-w-7xl mx-auto px-4 py-10 text-center">
         <h1 className="text-white sm:mt-20 font-helvetica text-4xl sm:text-[55px] md:text-[70px] leading-[1.27] tracking-[0px]">

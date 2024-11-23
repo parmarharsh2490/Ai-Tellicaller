@@ -1,4 +1,4 @@
-import { BookOpen, Phone, Globe, Shield, BarChart2 } from 'lucide-react';
+// import { BookOpen, Phone, Globe, Shield, BarChart2 } from 'lucide-react';
 import { useEffect } from 'react';
 
 const Blog1 = () => {
@@ -34,7 +34,7 @@ const Blog1 = () => {
                     {/* Key Benefits */}
                     <div className="grid md:grid-cols-3 gap-6">
                         <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-                            <BookOpen className="w-12 h-12 text-blue-500 mb-4" />
+                            {/* <BookOpen className="w-12 h-12 text-blue-500 mb-4" /> */}
                             <h2 className="text-2xl font-bold mb-3 text-blue-400">24/7 Availability</h2>
                             <ul className="list-disc list-inside text-gray-300 space-y-2">
                                 <li>Never miss a potential lead</li>
@@ -43,7 +43,7 @@ const Blog1 = () => {
                             </ul>
                         </div>
                         <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-                            <Phone className="w-12 h-12 text-green-500 mb-4" />
+                            {/* <Phone className="w-12 h-12 text-green-500 mb-4" /> */}
                             <h2 className="text-2xl font-bold mb-3 text-green-400">Unmatched Scalability</h2>
                             <ul className="list-disc list-inside text-gray-300 space-y-2">
                                 <li>Handle 500x more calls</li>
@@ -52,7 +52,7 @@ const Blog1 = () => {
                             </ul>
                         </div>
                         <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-                            <Globe className="w-12 h-12 text-purple-500 mb-4" />
+                            {/* <Globe className="w-12 h-12 text-purple-500 mb-4" /> */}
                             <h2 className="text-2xl font-bold mb-3 text-purple-400">Cost-Effective</h2>
                             <ul className="list-disc list-inside text-gray-300 space-y-2">
                                 <li>95% cost reduction</li>
@@ -90,14 +90,14 @@ const Blog1 = () => {
                         </h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
-                                <Shield className="w-12 h-12 text-red-500 mb-4" />
+                                {/* <Shield className="w-12 h-12 text-red-500 mb-4" /> */}
                                 <h3 className="text-xl font-bold mb-3 text-red-400">Security First</h3>
                                 <p className="text-gray-300">
                                     Industry-standard security protocols protecting your data integrity.
                                 </p>
                             </div>
                             <div>
-                                <BarChart2 className="w-12 h-12 text-yellow-500 mb-4" />
+                                {/* <BarChart2 className="w-12 h-12 text-yellow-500 mb-4" /> */}
                                 <h3 className="text-xl font-bold mb-3 text-yellow-400">Smart Analytics</h3>
                                 <p className="text-gray-300">
                                     Gain deep insights into customer interactions and behavior.

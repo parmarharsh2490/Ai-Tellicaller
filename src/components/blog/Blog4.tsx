@@ -1,4 +1,4 @@
-import { BookOpen, Phone, Globe, Shield, BarChart2 } from 'lucide-react';
+// import { BookOpen, Phone, Globe, Shield, BarChart2 } from 'lucide-react';
 import { useEffect } from 'react';
 
 const Blog4 = () => {
@@ -33,7 +33,7 @@ const Blog4 = () => {
           {/* Key Benefits */}
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              <BookOpen className="w-12 h-12 text-blue-500 mb-4" />
+              {/* <BookOpen className="w-12 h-12 text-blue-500 mb-4" /> */}
               <h2 className="text-xl font-bold mb-3 text-blue-400">Architectural Excellence</h2>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>Advanced natural language processing</li>
@@ -43,7 +43,7 @@ const Blog4 = () => {
               </ul>
             </div>
             <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              <Phone className="w-12 h-12 text-green-500 mb-4" />
+              {/* <Phone className="w-12 h-12 text-green-500 mb-4" /> */}
               <h2 className="text-xl font-bold mb-3 text-green-400">Enterprise-Grade Capabilities</h2>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>Scalable infrastructure</li>
@@ -53,7 +53,7 @@ const Blog4 = () => {
               </ul>
             </div>
             <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              <Globe className="w-12 h-12 text-purple-500 mb-4" />
+              {/* <Globe className="w-12 h-12 text-purple-500 mb-4" /> */}
               <h2 className="text-xl font-bold mb-3 text-purple-400">Quantifiable Business Impact</h2>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>95% Cost Reduction</li>
@@ -73,7 +73,7 @@ const Blog4 = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold mb-3 text-blue-400 flex items-center">
-                <BookOpen className="w-6 h-6 mr-2" /> Sales Transformation
+                {/* <BookOpen className="w-6 h-6 mr-2" /> */} Sales Transformation
               </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>Automated lead qualification</li>
@@ -85,7 +85,7 @@ const Blog4 = () => {
 
             <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold mb-3 text-green-400 flex items-center">
-                <Phone className="w-6 h-6 mr-2" /> Customer Support Revolution
+                {/* <Phone className="w-6 h-6 mr-2" /> */} Customer Support Revolution
               </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>24/7 multilingual support</li>
@@ -97,7 +97,7 @@ const Blog4 = () => {
 
             <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold mb-3 text-yellow-400 flex items-center">
-                <Shield className="w-6 h-6 mr-2" /> Operational Intelligence
+                {/* <Shield className="w-6 h-6 mr-2" /> */} Operational Intelligence
               </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>Real-time performance analytics</li>
@@ -109,7 +109,7 @@ const Blog4 = () => {
 
             <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold mb-3 text-purple-400 flex items-center">
-                <Globe className="w-6 h-6 mr-2" /> Advanced Technology Stack
+                {/* <Globe className="w-6 h-6 mr-2" /> */} Advanced Technology Stack
               </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>Large Language Model Integration</li>
@@ -121,7 +121,7 @@ const Blog4 = () => {
 
             <div className="bg-gray-800 p-6 rounded-xl shadow-lg col-span-full lg:col-span-1">
               <h3 className="text-xl font-bold mb-3 text-purple-400 flex items-center">
-                <BarChart2 className="w-6 h-6 mr-2" /> Security and Compliance Framework
+                {/* <BarChart2 className="w-6 h-6 mr-2" /> */} Security and Compliance Framework
               </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>End-to-end encryption</li>
@@ -139,14 +139,14 @@ const Blog4 = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <Shield className="w-12 h-12 text-red-500 mb-4" />
+                {/* <Shield className="w-12 h-12 text-red-500 mb-4" /> */}
                 <h3 className="text-xl font-bold mb-3 text-red-400">Seamless Connectivity</h3>
                 <p className="text-gray-300">
                   CRM System Integration, Marketing Automation Platforms, Cloud Communication Solutions, Enterprise Resource Planning (ERP) Systems.
                 </p>
               </div>
               <div>
-                <BarChart2 className="w-12 h-12 text-yellow-500 mb-4" />
+                {/* <BarChart2 className="w-12 h-12 text-yellow-500 mb-4" /> */}
                 <h3 className="text-xl font-bold mb-3 text-yellow-400">Competitive Differentiation</h3>
                 <p className="text-gray-300">
                   Unparalleled Scalability, Predictive Intelligence, Cost-Effective Solution, Future-Ready Architecture, Continuous Innovation.

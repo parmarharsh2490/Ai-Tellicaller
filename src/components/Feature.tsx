@@ -6,6 +6,7 @@ const FeatureCard = ({ imageUrl, title, description }: {
   <div className="p-6 rounded-lg border border-gray-800 bg-black/40 backdrop-blur-sm hover:border-purple-500/50 transition-all duration-300">
     <div className="mb-4">      
       <img src={imageUrl} 
+      loading="lazy"
  className="w-12 h-12"
   style={{
     filter: 'invert(21%) sepia(95%) saturate(5434%) hue-rotate(275deg) brightness(97%) contrast(123%)'
