@@ -62,14 +62,14 @@ const handleNext = () => {
           Customer Review
         </h2>
     <div className="flex items-center justify-around max-w-7xl mx-auto overflow-hidden">
-      <div className="">
-        <button  onClick={handlePrevious} className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition">
-          <span  className="text-white text-2xl">&lt;</span>
-        </button>
+      <div onClick={handlePrevious} className="relative -top-32 sm:-top-24">
+        {/* <button   className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition"> */}
+        <svg width="28" height="42" className="sm:h-8 sm:w-8 w-6 h-6" viewBox="0 0 28 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.75 2L2 21L25.75 40" stroke="white" stroke-opacity="0.8" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        {/* </button> */}
       </div>
-      <div
-        className="bg-black flex flex-col items-center justify-center sm:p-8 relative"
-      >
+      <div className="bg-black flex flex-col items-center justify-center sm:p-8 relative">
         {/* Wave Decoration - Top Right */}
         <div className="hidden sm:block absolute -top-4 -right-28 z-0">
           <WaveDecoration2 />
@@ -100,18 +100,44 @@ const handleNext = () => {
           
         </div>
         <div className="flex gap-2 mt-10 sm:mt-0">
-            <span className="w-3 h-3 rounded-full bg-gray-500"></span>
-            <span className="w-3 h-3 rounded-full bg-teal-400"></span>
-            <span className="w-3 h-3 rounded-full bg-gray-500"></span>
-          </div>
+  <svg className="w-16 h-12" width="130" height="29" viewBox="0 0 130 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle 
+      cx="14.5" 
+      cy="14.5" 
+      r={selectedIndex === 0 ? "14.5" : "10"} 
+      fill={selectedIndex === 0 ? "url(#paint0_linear_579_175)" : "#A8A8A8"} 
+    />
+    <circle 
+      cx="64" 
+      cy="15" 
+      r={selectedIndex === 1 ? "14.5" : "10"} 
+      fill={selectedIndex === 1 ? "url(#paint0_linear_579_175)" : "#A8A8A8"} 
+    />
+    <circle 
+      cx="105" 
+      cy="15" 
+      r={selectedIndex === 2 ? "14.5" : "10"} 
+      fill={selectedIndex === 2 ? "url(#paint0_linear_579_175)" : "#A8A8A8"} 
+    />
+    <defs>
+      <linearGradient id="paint0_linear_579_175" x1="-10" y1="-9.5" x2="36.5" y2="34.5" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#0047FF" />
+        <stop offset="1" stopColor="#00BCD4" />
+      </linearGradient>
+    </defs>
+  </svg>
+</div>
         {/* Navigation Arrows */}
 
         {/* Pagination Dots */}
       </div>
-      <div className="">
-        <button  onClick={handleNext} className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition">
-          <span  className="text-white text-2xl">&gt;</span>
-        </button>
+      <div onClick={handleNext} className="relative sm:-top-24 -top-32">
+        {/* <button   className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition"> */}
+        <svg width="28" height="42" className="sm:h-8 sm:w-8 w-6 h-6" viewBox="0 0 28 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 40L25.75 21L2 2" stroke="white" stroke-opacity="0.8" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+        {/* </button> */}
       </div>
     </div>
     </>
