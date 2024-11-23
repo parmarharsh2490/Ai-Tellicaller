@@ -21,15 +21,26 @@ const TrustedBy = () => {
               className={`max-w-full max-h-full object-contain ${logo.invert ? 'invert' : ''}`}
               src={logo.src}
               alt={logo.alt}
-              style={{ aspectRatio: "auto" }}
             />
           </div>
         ))}
-        <img src="/IIElevenLabs.png" className="w-32 h-32 invert" alt="" style={{ aspectRatio: "1 / 1" }} />
-        <img src="/highLevel2.png" className="w-24 sm:w-32 h-12 invert" alt="" style={{ aspectRatio: "8 / 3" }} />
+        <div className="w-32 h-32">
+          <img
+            src="/IIElevenLabs.png"
+            className="w-full h-full invert object-contain"
+            alt=""
+          />
+        </div>
+        <div className="w-24 sm:w-32 h-12">
+          <img
+            src="/highLevel2.png"
+            className="w-full h-full invert object-contain"
+            alt=""
+          />
+        </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default TrustedBy;
