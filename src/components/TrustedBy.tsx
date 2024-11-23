@@ -11,25 +11,25 @@ const TrustedBy = () => {
   return (
     <>
       <h1 style={{ color: "#618ADC" }} className="text-lg uppercase mt-10">Trusted By</h1>
-      <div className="flex items-center justify-around flex-wrap gap-2 sm:gap-10 ">
+      <div className="flex items-center justify-around flex-wrap gap-2 sm:gap-10">
         {logos.map((logo, index) => (
           <div
             key={index}
-            className="w-24 h-24 sm:w-28 sm:h-28  flex items-center justify-center"
+            className="w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center"
           >
             <img
-              className={` max-w-full max-h-full object-contain ${logo.invert ? 'invert' : ''}`}
+              className={`max-w-full max-h-full object-contain ${logo.invert ? 'invert' : ''}`}
               src={logo.src}
               alt={logo.alt}
+              style={{ aspectRatio: "auto" }}
             />
-
           </div>
         ))}
-      <img src="/IIElevenLabs.png" className="w-32 h-32 invert" alt="" />
-      <img src="/highLevel2.png" className="w-24 sm:w-32 h-12 invert" alt="" />
+        <img src="/IIElevenLabs.png" className="w-32 h-32 invert" alt="" style={{ aspectRatio: "1 / 1" }} />
+        <img src="/highLevel2.png" className="w-24 sm:w-32 h-12 invert" alt="" style={{ aspectRatio: "8 / 3" }} />
       </div>
     </>
   )
 }
 
-export default TrustedBy
+export default TrustedBy;
