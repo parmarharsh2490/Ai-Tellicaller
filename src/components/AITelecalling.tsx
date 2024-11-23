@@ -3,7 +3,7 @@ import  { useRef, useState } from 'react';
 const industries = [
   {
     label: 'Healthcare and Medical Practices',
-    image: '/aitellicalling1.jpeg',
+    image: '/aitellicalling1.png',
     description: 'Provide appointment scheduling, answer basic health questions, and manage patient records. Dialoft AI can handle appointment reminders and cancellations, freeing up staff for other tasks. It can also access and update patient records securely.'
   },
   {
