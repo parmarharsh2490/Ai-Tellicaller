@@ -75,8 +75,8 @@ const handleNext = () => {
           <WaveDecoration2 />
         </div>
         {/* Review Box */}
-        <div className="z-10 bg-image2 sm:min-h-80 min-h-[320px]  sm:relative w-full max-w-lg p-4 sm:p-12  shadow-lg text-center">
-          <p className="text-gray-300 font-sans text-xs sm:text-base leading-relaxed">
+        <div className="z-10 bg-image2 sm:min-h-80 min-h-[350px] flex items-center justify-center  sm:relative w-full max-w-lg p-2 sm:p-12  shadow-lg text-center">
+          <p className="text-gray-300 font-sans text-sm sm:text-base leading-relaxed">
             {reviews[selectedIndex].description}
           </p>
          
