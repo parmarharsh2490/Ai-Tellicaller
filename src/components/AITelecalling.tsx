@@ -43,7 +43,7 @@ const industries = [
   },
   {
     label: 'Travels & Hospitality',
-    image: '/aitellicalling9.avif',
+    image: '/aitellicalling9.jpeg',
     description: 'Dialoft AI elevates travel and hospitality services by offering personalized travel suggestions, booking accommodations, and planning itineraries. It can answer queries about destinations, transportation options, and hotel amenities. Additionally, it ensures a seamless experience by managing cancellations, rescheduling, and providing real-time updates.'
   },
   {

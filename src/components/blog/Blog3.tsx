@@ -1,171 +1,170 @@
-// import { BookOpen, Phone, Globe, Shield, BarChart2 } from 'lucide-react';
-import { useEffect } from 'react';
+import { useEffect } from "react";
+import BookDemoButton from "../BookDemoButton";
 
 const Blog3 = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-}, [])
+  }, []);
   return (
-    <div className="bg-gradient-to-br from-gray-900 to-black text-white min-h-screen py-12">
-      <div className="container mx-auto px-4 max-w-4xl">
-        {/* Header Section */}
-        <div className="bg-gray-800 rounded-xl shadow-2xl overflow-hidden mb-8">
-          <img 
-            className="w-full h-96 object-cover"
-            src="https://s3-alpha-sig.figma.com/img/d2bf/c323/360b877ce3514fd0bc829f06a0c4e8f5?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oiReCtvwb-fN60uMFpPn2b3-LRbN3v7eHTb9r588E4T8aOUaa3ck8v3~0kRWiBv5zflonZYmh13EklpDZ-V~pxqQqCJPLpPjfaag95Aa43nafDHesU2knAnaf1lg4tk98UYT3xjXhYnrrCdUNgna8D7M2xaLFSLRRPS1OzT1-AQMLMmNB6k34EQv3gHgXxvO9oZ36mPtDsMAV8yE0LIyyvnY1zoZ7jtSq10GrRvI8dpWlCanDPdF6GQpwej9IILuAURpl1hMiXtzk0Fhxqk1Pg0Rask-U4lIjMDaSMyw9tSoB7deRBU-YYNCrJveSo3DVfiakXt1n2xNmcaon~3hhQ__" 
-            alt="AI Telecalling Transformation" 
-          />
-        </div>
-
-        {/* Content Section */}
-        <div className="space-y-6">
-          <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-            AI Telecalling: Turning Customer Interactions into Your Biggest Business Asset
+    <>
+     <div className="bg-black font-helvetica flex items-center justify-center w-screen">
+    <div className="base-image text-white lg:max-w-[70%] p-8 md:p-12">
+    <div className="flex flex-col sm:flex-row">
+        <img
+          src="/3.png"
+          className="md:min-w-[30%] w-full rounded-lg min-w-[50%] bg-cover"
+          alt=""
+        />
+        <div className="flex flex-col items-center justify-center p-3 sm:p-6">
+        <h1 className="text-3xl font-bold mb-4">
+            Your Guide to Adopting AI-Driven Call Centers with Dialoft AI
           </h1>
-
-          {/* Introduction */}
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <p className="text-lg leading-relaxed text-gray-300">
-              In an era where customer experience can make or break a business, traditional communication strategies are becoming obsolete. Enter AI Telecalling – the breakthrough technology that's not just changing the game, but completely rewriting the rules of customer engagement.
-            </p>
-          </div>
-
-          {/* Key Benefits */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              {/* <BookOpen className="w-12 h-12 text-blue-500 mb-4" /> */}
-              <h2 className="text-2xl font-bold mb-3 text-blue-400">24/7 Availability</h2>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Never miss a potential lead</li>
-                <li>Instant support at any time</li>
-                <li>Eliminate waiting times</li>
-              </ul>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              {/* <Phone className="w-12 h-12 text-green-500 mb-4" /> */}
-              <h2 className="text-2xl font-bold mb-3 text-green-400">Unmatched Scalability</h2>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Handle 500x more calls</li>
-                <li>Manage peak call volumes</li>
-                <li>Expand reach instantly</li>
-              </ul>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              {/* <Globe className="w-12 h-12 text-purple-500 mb-4" /> */}
-              <h2 className="text-2xl font-bold mb-3 text-purple-400">Cost-Effective</h2>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>95% cost reduction</li>
-                <li>No training costs</li>
-                <li>50% ROI in 30 days</li>
-              </ul>
-            </div>
-          </div>
-
-{/* Industry-Specific Transformations */}
-<h2 className="text-3xl font-bold mb-6 text-center text-blue-400">
-  Industry-Specific Transformations
-</h2>
-
-<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-  <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-    <h3 className="text-2xl font-bold mb-3 text-blue-400 flex items-center">
-      {/* <BookOpen className="w-6 h-6 mr-2" /> Real Estate */}
-    </h3>
-    <ul className="list-disc list-inside text-gray-300 space-y-2">
-      <li>Instant property inquiry responses</li>
-      <li>24/7 lead qualification</li>
-      <li>Automated appointment scheduling</li>
-    </ul>
-  </div>
-
-  <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-    <h3 className="text-2xl font-bold mb-3 text-green-400 flex items-center">
-      {/* <Phone className="w-6 h-6 mr-2" /> Healthcare */}
-    </h3>
-    <ul className="list-disc list-inside text-gray-300 space-y-2">
-      <li>Appointment management</li>
-      <li>Patient follow-ups</li>
-      <li>Prescription refills</li>
-    </ul>
-  </div>
-
-  <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-    <h3 className="text-2xl font-bold mb-3 text-yellow-400 flex items-center">
-      {/* <Shield className="w-6 h-6 mr-2" /> Insurance */}
-    </h3>
-    <ul className="list-disc list-inside text-gray-300 space-y-2">
-      <li>Customer query resolution</li>
-      <li>Policy information delivery</li>
-      <li>Claims processing</li>
-    </ul>
-  </div>
-
-  <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-    <h3 className="text-2xl font-bold mb-3 text-purple-400 flex items-center">
-      {/* <Globe className="w-6 h-6 mr-2" /> E-commerce */}
-    </h3>
-    <ul className="list-disc list-inside text-gray-300 space-y-2">
-      <li>Instant returns and exchange processing</li>
-      <li>Shipment tracking</li>
-      <li>Real-time order support</li>
-    </ul>
-  </div>
-
-  <div className="bg-gray-800 p-6 rounded-xl shadow-lg col-span-full lg:col-span-1">
-    <h3 className="text-2xl font-bold mb-3 text-purple-400 flex items-center">
-      {/* <BarChart2 className="w-6 h-6 mr-2" /> The Numbers Speak Volumes */}
-    </h3>
-    <ul className="list-disc list-inside text-gray-300 space-y-2">
-      <li>120,000+ Calls Completed</li>
-      <li>Zero Wait Time</li>
-      <li>50% ROI in 30 Days</li>
-      <li>95% Cost Reduction</li>
-    </ul>
-  </div>
-</div>
-
-          {/* Technology Highlights */}
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h2 className="text-3xl font-bold mb-6 text-center text-green-400">
-              Advanced Technology
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                {/* <Shield className="w-12 h-12 text-red-500 mb-4" /> */}
-                <h3 className="text-xl font-bold mb-3 text-red-400">Security First</h3>
-                <p className="text-gray-300">
-                  Industry-standard security protocols protecting your data integrity.
-                </p>
-              </div>
-              <div>
-                {/* <BarChart2 className="w-12 h-12 text-yellow-500 mb-4" /> */}
-                <h3 className="text-xl font-bold mb-3 text-yellow-400">Smart Analytics</h3>
-                <p className="text-gray-300">
-                  Gain deep insights into customer interactions and behavior.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Call to Action */}
-          <div className="bg-blue-900 p-8 rounded-xl text-center shadow-2xl">
-            <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Communication?</h2>
-            <p className="text-lg mb-6 text-blue-100">
-              Experience the future of customer interaction with our AI Telecalling solution.
-            </p>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg">
-              Book Your Demo Now
-            </button>
-          </div>
-
-          {/* Disclaimer */}
-          <div className="text-center text-sm text-gray-500 mt-4">
-            Disclaimer: Actual results may vary. Performance depends on specific business requirements and implementation strategy.
-          </div>
+          <p className="text-base mb-4">
+            Dive into the evolution of customer service from traditional call centers to advanced AI-powered systems. Learn how Dialoft AI enables businesses to provide 24/7, personalized customer care with lower overhead, improved efficiency, and a human-like touch that transforms customer interactions.
+          </p>
         </div>
       </div>
-    </div>
-  );
-}
 
-export default Blog3
+      <div className="mt-10">
+      <h2 className="text-3xl font-bold mt-10 my-4">
+          From Man to Machine: Evolution into Customer Service Innovation
+        </h2>
+        <p className="text-base mb-4">
+          Customer service has evolved from sluggish and manpower-intensive call centers to the efficiency of AI-powered systems. Today, the AI-driven call center is more than merely a text input robot; it's the ability to provide quick, personalized, and 24/7 customer care to businesses.
+        </p>
+        <p className="text-base mb-4">
+          Businesses need not sacrifice human touch while shifting to AI call centers. Using Dialoft AI allows businesses to provide great customer experiences at a much lower cost. With easy setup and smart features, AI now helps companies run advanced call centers, sans the high overheads of the old models.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-xl md:text-3xl font-bold mb-4">
+          How Does Dialoft AI Phone Systems Work
+        </h2>
+        <p className="text-base mb-4">
+          Dialoft AI typically imitates a human-to-human conversation through NLP, machine learning, and voice recognition. These systems decode the intent of every caller and provide responses from an enormous database correctly.
+        </p>
+        <h3 className="text-lg mb-4">Key Operational Mechanisms:</h3>
+        <ul className="text-lg lg:text-xl mb-4 list-disc list-inside">
+          <p className="text-lg lg:text-xl mb-4 font-bold">1 : Intelligent Call Handling</p>
+          <ul className="mb-4 text-base list-disc list-inside">
+            <li>Reads incoming calls</li>
+            <li>Determines customer's purpose</li>
+            <li>Offers quick and accurate solutions to general inquiries</li>
+          </ul>
+          <p className="text-lg lg:text-xl mb-4 font-bold">2 : Integrated Personalization</p>
+          <ul className="text-base mb-4 list-disc list-inside">
+            <li>Embedded within your CRM</li>
+            <li>Serves purchase history in real-time</li>
+            <li>Accesses customer preferences</li>
+            <li>Retrieves past interaction details</li>
+          </ul>
+          <p className="text-lg font-bold lg:text-xl mb-4">3 : Continuous Learning</p>
+          <ul className="mb-4 text-base list-disc list-inside">
+            <li>Improves system responses with each interaction</li>
+            <li>Develops more intelligent conversations over time</li>
+          </ul>
+        </ul>
+        <p className="text-base mb-4">
+          Dialoft AI empowers customers to be heard and understood—providing a service experience nearly indistinguishable from traditional human agents, but without the associated cost overhead.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-xl md:text-3xl font-bold mb-4">
+          Why AI-Powered Call Centers Are a Game-Changer
+        </h2>
+        <p className="text-base mb-4">
+          Dialoft AI brings numerous benefits to customer service:
+        </p>
+        <ul className="mb-4 list-disc list-inside">
+          <li>Efficiency: Handle large call volumes without increasing wait times</li>
+          <li>Cost Savings: Reduce employee and infrastructure expenses while maintaining high-quality service</li>
+          <li>24/7 Availability: Provide service at customer's convenience</li>
+          <li>Scalability: Easily scale up during peak times without compromising service efficiency</li>
+          <li>Proactive Support: Generate insights based on customer needs before they even call</li>
+        </ul>
+        <p className="text-base mb-4">
+          With these capabilities, Dialoft AI does more than enhance operations—it transforms how businesses interact with customers.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-xl md:text-3xl font-bold mb-4">
+          Getting Ready for Your AI Transformation
+        </h2>
+        <h3 className="text-lg font-bold lg:text-xl mb-4">Implementation Process:</h3>
+        <ul className="mb-4 list-disc list-inside">
+        <p className="text-lg lg:text-xl mb-4 font-bold">1 : Assess Current Operations</p>
+          <ul className="mb-4 list-disc list-inside">
+            <li>Review call volumes</li>
+            <li>Analyze existing workflows</li>
+            <li>Evaluate customer satisfaction</li>
+            <li>Identify improvement areas</li>
+          </ul>
+          <p className="text-lg lg:text-xl mb-4 font-bold">2 : Choose the Right System</p>
+          <ul className="mb-4 list-disc list-inside">
+            <li>Explore Dialoft AI's customizable options</li>
+            <li>Ensure alignment with current tools</li>
+            <li>Consider future scalability</li>
+          </ul>
+          <p className="text-lg lg:text-xl mb-4 font-bold">3 : Staff Training</p>
+          <ul className="mb-4 list-disc list-inside">
+            <li>Train employees to work alongside AI</li>
+            <li>Focus on:
+            <ul className="mb-4 pl-3 list-square list-inside">
+              <li>Escalation management</li>
+              <li>Interpreting AI-generated data</li>
+              <li>Actionable insights</li>
+            </ul>
+            </li>
+
+          </ul>
+        </ul>
+        <p className="text-base mb-4">
+          The goal is to combine human judgment with AI productivity, delivering unmatched service in the marketplace.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-xl md:text-3xl font-bold mb-4">
+          Dialoft AI: Simplicity at Its Core
+        </h2>
+        <p className="text-base mb-4">
+          What makes Dialoft AI particularly appealing is its effortless incorporation. No extensive coding or technical expertise is needed to set up an AI call center in your business.
+        </p>
+        <h3 className="text-lg lg:text-2xl mb-4">Key Advantages:</h3>
+        <ul className="mb-4 list-disc list-inside">
+          <li>Quick deployment</li>
+          <li>Real-time scalability</li>
+          <li>Adaptable to business needs</li>
+          <li>Smooth transition</li>
+          <li>Suitable for businesses of all sizes</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 className="text-xl md:text-2xl font-bold mb-4">
+          The Path Forward
+        </h2>
+        <p className="text-base mb-4">
+          AI-powered call centers aren't just the future—they're the present. With Dialoft AI, you're investing in a solution that:
+        </p>
+        <ul className="mb-4 list-disc list-inside">
+          <li>Drives operational efficiency</li>
+          <li>Reduces costs</li>
+          <li>Enhances customer satisfaction</li>
+        </ul>
+        <p className="text-base mb-4">
+          READY TO REVOLUTIONIZE YOUR CUSTOMER SERVICE INTO A POWERHOUSE OF EFFICIENCY AND INNOVATION? TAKE THE GAME-CHANGING STEP WITH DIALOFT AI AND TRANSFORM YOUR CUSTOMER INTERACTIONS.
+        </p>
+    <BookDemoButton/>
+      </div>
+    </div>
+    </div>
+    </>
+   
+  );
+};
+
+export default Blog3;

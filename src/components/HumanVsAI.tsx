@@ -59,25 +59,25 @@ const HumanVsAI = () => {
                 <thead>
                     <tr className="">
                         <th className="text-lg sm:text-4xl font-bold sm:px-4 text-start sm:py-2 gradient-text-alt-2">Aspect</th>
-                        <th className="text-lg sm:text-4xl font-bold sm:px-4 text-start sm:py-2 gradient-text-alt-3">Human</th>
-                        <th className="text-lg sm:text-4xl font-bold sm:px-4 text-start sm:py-2 gradient-text-alt-1">AI</th>
+                        <th className="text-lg sm:text-4xl font-bold sm:px-4 text-start sm:py-2 gradient-text-alt-3">Human Tellicaller</th>
+                        <th className="text-lg sm:text-4xl font-bold sm:px-4 text-start sm:py-2 gradient-text-alt-1">AI Tellicaller</th>
                     </tr>
                 </thead>
                 <tbody>
                     {comparisonData.aspects.map((aspect, index) => (
-                        <tr key={index} className="bg-opacity-50 transition">
+                        <tr key={index} className="bg-opacity-50 transition font-helvetica">
                             <td className="sm:px-4 sm:py-2 text-[10px] sm:text-base font-medium">
-                                <ul className="sm:list-disc list-inside sm:space-y-1">
-                                    <li>{aspect}</li>
+                                <ul className="list-disc list-outside sm:space-y-1">
+                                    <li className="font-bold">{aspect}</li>
                                 </ul>
                             </td>
                             <td className="sm:px-4 sm:py-2 text-[10px] sm:text-base">
-                                <ul className="sm:list-disc list-inside sm:space-y-1">
+                                <ul className="sm:space-y-1">
                                     <li>{comparisonData.human[index]}</li>
                                 </ul>
                             </td>
                             <td className="sm:px-4 sm:py-2 text-[10px] sm:text-base">
-                                <ul className="sm:list-disc list-inside sm:space-y-1">
+                                <ul className="sm:space-y-1">
                                     <li>{comparisonData.ai[index]}</li>
                                 </ul>
                             </td>

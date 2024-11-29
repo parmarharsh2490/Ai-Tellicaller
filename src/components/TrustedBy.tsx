@@ -24,7 +24,7 @@ const TrustedBy = () => {
             />
           </div>
         ))}
-        <div className="w-32 h-32">
+        <div className="w-40 h-40">
           <img
             src="/IIElevenLabs.avif"
             className="w-full h-full invert object-contain"

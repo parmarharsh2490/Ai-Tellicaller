@@ -31,19 +31,19 @@ const CustomerReview = () => {
   const [reviews] = useState([
   {
     name: "Michael Reynolds",
-    image : "/review1.jpeg",
-    description: "DialoAI has completely transformed our property inquiry management at Golden Horizon Realty. We're handling 3x more leads with 50% less staff. The AI telecaller understands nuanced client requirements, schedules viewings instantly, and provides personalized follow-ups. It's like having a superhuman sales agent working 24/7.",
+    image : "/review2.jpg",
+    description: "DialoftAI has completely transformed our property inquiry management at Golden Horizon Realty. We're handling 3x more leads with 50% less staff. The AI telecaller understands nuanced client requirements, schedules viewings instantly, and provides personalized follow-ups. It's like having a superhuman sales agent working 24/7.",
     position: "Founder & CEO at Golden Horizon Realty"
   },
   {
     name: "Elizabeth Harington",
-    image : "/review2.jpeg",
+    image : "/review1.jpg",
     description: "As the operations director at The Rosewood Collection, managing reservations and customer queries across our boutique hotels was challenging. Dialoft AI changed everything. Their telecalling system handles international bookings, manages complex dietary requirements, and provides multilingual support. We've seen a 40% increase in booking conversions and massive reduction in operational costs",
 position: "Operations Director at The Rosewood Collection, Manchester, United Kingdom"
   },
   {
     name: "David Thornton",
-    image : "/review3.jpeg",
+    image : "/review3.jpg",
     description: "SunPower Solutions needed a robust system to manage lead generation and customer support for our solar installation services. Dialoft AI's telecalling platform delivers extraordinary results. We're pre-qualifying leads 5x faster, reducing customer acquisition costs by 60%, and providing instant technical support. Their AI understands technical solar terminology better than most human agents!",
     position: "Managing Brisbane At Queensiland Australia"
   },

@@ -3,10 +3,18 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      listStyleType: {
+        none: 'none',
+        disc: 'disc',
+        decimal: 'decimal',
+        square: 'square',
+        roman: 'upper-roman',
+      },
       spacing: {
         '54': '54px',
       },
       fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'],
           sans: ['DM Sans', 'sans-serif'], // Replace default or add as new
         helvetica: [
           "Helvetica Neue",

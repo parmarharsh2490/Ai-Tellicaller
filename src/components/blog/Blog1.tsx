@@ -1,130 +1,249 @@
-// import { BookOpen, Phone, Globe, Shield, BarChart2 } from 'lucide-react';
-import { useEffect } from 'react';
+import { useEffect } from "react";
+import BookDemoButton from "../BookDemoButton";
 
 const Blog1 = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [])
-    
-    return (
-        <div className="bg-gradient-to-br from-gray-900 to-black text-white min-h-screen py-12">
-            <div className="container mx-auto px-4 max-w-4xl">
-                {/* Header Section */}
-                <div className="bg-gray-800 rounded-xl shadow-2xl overflow-hidden mb-8">
-                    <img 
-                        className="w-full h-96 object-cover"
-                        src="https://s3-alpha-sig.figma.com/img/d2bf/c323/360b877ce3514fd0bc829f06a0c4e8f5?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oiReCtvwb-fN60uMFpPn2b3-LRbN3v7eHTb9r588E4T8aOUaa3ck8v3~0kRWiBv5zflonZYmh13EklpDZ-V~pxqQqCJPLpPjfaag95Aa43nafDHesU2knAnaf1lg4tk98UYT3xjXhYnrrCdUNgna8D7M2xaLFSLRRPS1OzT1-AQMLMmNB6k34EQv3gHgXxvO9oZ36mPtDsMAV8yE0LIyyvnY1zoZ7jtSq10GrRvI8dpWlCanDPdF6GQpwej9IILuAURpl1hMiXtzk0Fhxqk1Pg0Rask-U4lIjMDaSMyw9tSoB7deRBU-YYNCrJveSo3DVfiakXt1n2xNmcaon~3hhQ__" 
-                        alt="AI Telecalling Transformation" 
-                    />
-                </div>
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-                {/* Content Section */}
-                <div className="space-y-6">
-                    <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-                        Revolutionize Your Customer Communication
-                    </h1>
-
-                    {/* Introduction */}
-                    <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-                        <p className="text-lg leading-relaxed text-gray-300">
-                            In today's hyper-connected world, customer communication is the lifeline of any successful business. But what if you could supercharge your customer engagement without the traditional limitations of human-only call centers?
-                        </p>
-                    </div>
-
-                    {/* Key Benefits */}
-                    <div className="grid md:grid-cols-3 gap-6">
-                        <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-                            {/* <BookOpen className="w-12 h-12 text-blue-500 mb-4" /> */}
-                            <h2 className="text-2xl font-bold mb-3 text-blue-400">24/7 Availability</h2>
-                            <ul className="list-disc list-inside text-gray-300 space-y-2">
-                                <li>Never miss a potential lead</li>
-                                <li>Instant support at any time</li>
-                                <li>Eliminate waiting times</li>
-                            </ul>
-                        </div>
-                        <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-                            {/* <Phone className="w-12 h-12 text-green-500 mb-4" /> */}
-                            <h2 className="text-2xl font-bold mb-3 text-green-400">Unmatched Scalability</h2>
-                            <ul className="list-disc list-inside text-gray-300 space-y-2">
-                                <li>Handle 500x more calls</li>
-                                <li>Manage peak call volumes</li>
-                                <li>Expand reach instantly</li>
-                            </ul>
-                        </div>
-                        <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-                            {/* <Globe className="w-12 h-12 text-purple-500 mb-4" /> */}
-                            <h2 className="text-2xl font-bold mb-3 text-purple-400">Cost-Effective</h2>
-                            <ul className="list-disc list-inside text-gray-300 space-y-2">
-                                <li>95% cost reduction</li>
-                                <li>No training costs</li>
-                                <li>50% ROI in 30 days</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* Industries */}
-                    <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-                        <h2 className="text-3xl font-bold mb-6 text-center text-blue-400">
-                            Transforming Industries
-                        </h2>
-                        <div className="grid md:grid-cols-3 gap-4 text-center">
-                            {[
-                                'Real Estate', 
-                                'Healthcare', 
-                                'E-commerce', 
-                                'Insurance', 
-                                'Education', 
-                                'Finance'
-                            ].map((industry, index) => (
-                                <div key={index} className="bg-gray-700 p-4 rounded-lg hover:bg-gray-600 transition-all">
-                                    {industry}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Technology Highlights */}
-                    <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-                        <h2 className="text-3xl font-bold mb-6 text-center text-green-400">
-                            Advanced Technology
-                        </h2>
-                        <div className="grid md:grid-cols-2 gap-6">
-                            <div>
-                                {/* <Shield className="w-12 h-12 text-red-500 mb-4" /> */}
-                                <h3 className="text-xl font-bold mb-3 text-red-400">Security First</h3>
-                                <p className="text-gray-300">
-                                    Industry-standard security protocols protecting your data integrity.
-                                </p>
-                            </div>
-                            <div>
-                                {/* <BarChart2 className="w-12 h-12 text-yellow-500 mb-4" /> */}
-                                <h3 className="text-xl font-bold mb-3 text-yellow-400">Smart Analytics</h3>
-                                <p className="text-gray-300">
-                                    Gain deep insights into customer interactions and behavior.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Call to Action */}
-                    <div className="bg-blue-900 p-8 rounded-xl text-center shadow-2xl">
-                        <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Communication?</h2>
-                        <p className="text-lg mb-6 text-blue-100">
-                            Experience the future of customer interaction with our AI Telecalling solution.
-                        </p>
-                        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg">
-                            Book Your Demo Now
-                        </button>
-                    </div>
-
-                    {/* Disclaimer */}
-                    <div className="text-center text-sm text-gray-500 mt-4">
-                        Disclaimer: Results may vary based on specific business requirements and implementation.
-                    </div>
-                </div>
-            </div>
+  return (
+      <div className="bg-black font-helvetica flex items-center justify-center w-screen">
+      <div className="base-image text-white lg:max-w-[70%] p-8 md:p-12">
+        <div className="flex flex-col sm:flex-row">
+          <img
+            src="/1.png"
+            className="md:min-w-[30%] w-full rounded-lg min-w-[50%] bg-cover"
+            alt=""
+          />
+          <div className="flex flex-col items-center justify-center p-3 sm:p-6">
+            <h1 className="text-3xl font-bold mb-4">
+              7 Industries Revolutionized by AI Phone Agents (And Why Yours Should
+              Be Next)
+            </h1>
+            <p className="text-base mb-8">
+              Customer support technology is changing faster than ever, and
+              Dialoft AI is here to help businesses keep up. Our AI phone agent
+              software makes it easier to connect with customers, offering
+              faster, more personal, and more efficient service every time.
+            </p>
+          </div>
         </div>
-    );
-}
+
+        <div className="sm:mt-10">
+          <p className="text-base mb-4">
+            The dramatically changing ways in which businesses interact with
+            customers put AI phone agents right at the center of that revolution.
+            Dialoft AI is redrawing the customer support paradigm by finding
+            solutions that unlock efficiency, enhance satisfaction, and reduce
+            operational costs.
+          </p>
+          <p className="text-base mb-4">
+            Where value of AI phone agents extends to almost every industry,
+            seven were really having their way. Let's have a look at how AI is
+            reshaping them and why your business could be next.
+          </p>
+          <h2 className="text-3xl font-bold mt-10 my-4">
+            1. Customer Service & Call Centers
+          </h2>
+          <p className="text-base mb-4">
+            At the core, customer service and call centers face straightforward
+            challenges: too many calls, yet too much repetition in inquiries with
+            employees experiencing high rates of turnover. Those problems
+            pressure the associates but have a future impact on the satisfaction
+            of the customers.
+          </p>
+          <p className="text-base font-bold mb-4">AI Phone Agents:</p>
+          <ul className="mb-8 list-disc list-inside">
+            <li>High Volume Process: Speed and accuracy</li>
+            <li>Routine Inquiries: Allow human agents to focus on complex issues</li>
+            <li>24/7 Support: Round-the-clock availability</li>
+            <li>
+              Cost Reduction: Significant reduction in hiring, training, and
+              retaining manpower-related costs
+            </li>
+          </ul>
+          <p className="text-base mb-8">
+            This technology transforms the call center to a highly effective and
+            customer-centric operation.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-3xl font-bold mt-10  mb-4">2. Healthcare</h2>
+          <p className="text-base mb-4">
+            Healthcare providers face immense pressure to provide timely and
+            accurate support. AI phone agents lift off this burden by completing
+            critical tasks through automation and ensuring patient-centric care
+            in every direction.
+          </p>
+          <p className="text-base font-bold mb-4">
+            With Dialoft AI, health care organizations can:
+          </p>
+          <ul className=" mb-8 list-disc list-inside">
+            <li>
+              Manage appointment scheduling and follow-up calls without a hassle
+            </li>
+            <li>
+              Administer medication reminders and wellness tips to patients
+            </li>
+            <li>Ensure HIPAA compliance</li>
+          </ul>
+          <p className="text-base mb-8">
+            Patients can receive personalized support at any given time. This
+            support helps healthcare professionals deliver quality care and do
+            their jobs even better.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-3xl font-bold  mt-10  mb-4">3. E-commerce and Retail</h2>
+          <p className="text-base mb-4">
+            The client experience is what's making the brand stand apart in this
+            challenging online shopping landscape. AI phone agents streamline
+            support while creating opportunities for deeper customer engagement.
+          </p>
+          <p className="text-base font-bold mb-4">
+            There are numerous benefits of Dialoft's AI solutions for retailers:
+          </p>
+          <ul className="mb-8 list-disc list-inside">
+            <li>Interfacing with CRM for better customized product offers</li>
+            <li>Multi-lingual support for the global market</li>
+            <li>Faster resolution to more customized shopping experience</li>
+            <li>Generating sales and returning customer optimization</li>
+          </ul>
+          <p className="text-base mb-8">
+            Optimization of customer interactions will result in higher revenue
+            and retention.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-3xl font-bold  mt-10  mb-4">4. Telecommunications</h2>
+          <p className="text-base mb-4">
+            Telecom companies also deal with enormous volumes of calls—from
+            disputes over bills to service outages. AI telephone agents offer a
+            much smarter manner of dealing with such interactions.
+          </p>
+          <p className="text-base font-bold mb-4">With Dialoft AI, Telecom can:</p>
+          <ul className="mb-8 list-disc list-inside">
+            <li>
+              Troubleshoot technical difficulties with automated step-by-step
+              guidance
+            </li>
+            <li>
+              Reduce human agent workload by resolving routine inquiries
+            </li>
+            <li>
+              Complete telephone agent jobs in record time to satisfy customers
+            </li>
+          </ul>
+          <p className="text-base mb-8">
+            All of these benefits free up resources while maximizing service
+            efficiency on all sides.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-3xl font-bold mb-4">5. Travel & Hospitality</h2>
+          <p className="text-base mb-4">
+            In an industry which bases itself on customer satisfaction, AI phone
+            agents will certainly be a game-changer. It streamlines operations
+            while still delivering that personal touch travelers have grown to
+            expect.
+          </p>
+          <p className="text-base font-bold mb-4">
+            Hotels, airlines, and tour operators can have advantage over Dialoft
+            AI to:
+          </p>
+          <ul className="mb-8 list-disc list-inside">
+            <li>Process booking requests and last-minute changes easily</li>
+            <li>Personalize holiday propositions to clients</li>
+            <li>Collect feedback for better experiences</li>
+          </ul>
+          <p className="text-base mb-8">
+            This will allow corporations to benefit from satisfied customers and
+            smooth sailing.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-3xl font-bold mb-4">6. Financial Services</h2>
+          <p className="text-base mb-4">
+            Banks and others depend on bank transactions to be flawless. AI phone
+            agents create customer delight through respect to compliance.
+          </p>
+          <p className="text-base font-bold mb-4">
+            Dialoft AI phone agents can do all of the below:
+          </p>
+          <ul className="mb-8 list-disc list-inside">
+            <li>
+              Answer simple banking inquiries, including checking and savings
+              balance, and transaction history
+            </li>
+            <li>
+              Support requests for loan and credit card activation
+            </li>
+            <li>
+              Guarantee security and regulatory compliance through robust
+              encryption and authentication methods
+            </li>
+            <li>
+              Manage banking systems and safeguard confidential information
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-3xl font-bold mb-4">
+            7. Learning Institutions
+          </h2>
+          <p className="text-base mb-4">
+            Learning institutions are adopting AI to aid in managing students,
+            parents, and staff. AI telephone agents play an immensely pivotal
+            role in a sector where communication is paramount.
+          </p>
+          <p className="text-base font-bold mb-4">
+            Dialoft AI Engages Educators:
+          </p>
+          <ul className="mb-8 list-disc list-inside">
+            <li>
+              Empowering learners with answers to frequently asked questions
+              about enrollment, class time, and tuition
+            </li>
+            <li>Providing virtual learning environment assistance</li>
+            <li>
+              Offering multilingual support to make education accessible to
+              diverse student populations
+            </li>
+          </ul>
+          <p className="text-base mb-8">
+            These automated routine interactions will free up educators' time for
+            what really matters: learning and teaching.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-3xl font-bold mb-4">
+            Envision a More Vibrant Industry with Dialoft AI
+          </h2>
+          <p className="text-base mb-4">
+            The telephone AI agent is no longer a luxury but an absolute
+            necessity for the modern business. You'll now be able to offer
+            critical experiences to your customers and enhance your operational
+            efficiency while staying ahead in the game with Dialoft AI.
+          </p>
+          <p className="text-base mb-4">
+            The future of customer service is here. Are you ready?
+          </p>
+          <p className="text-base mb-8">
+            Call Dialoft AI today to see how we can change the game on your
+            customer interactions.
+          </p>
+    <BookDemoButton/>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Blog1;

@@ -1,179 +1,158 @@
-// import { BookOpen, Phone, Globe, Shield, BarChart2 } from 'lucide-react';
-import { useEffect } from 'react';
+import { useEffect } from "react";
+import BookDemoButton from "../BookDemoButton";
 
 const Blog4 = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-}, [])
+  }, [])
   return (
-    <div className="bg-gradient-to-br from-gray-900 to-black text-white min-h-screen py-12">
-      <div className="container mx-auto px-4 max-w-5xl">
-        {/* Header Section */}
-        <div className="flex items-center justify-center   rounded-xl shadow-2xl overflow-hidden mb-8">
-          <img 
-            className="w-full max-w-4xl h-96 object-cover"
-            src="https://s3-alpha-sig.figma.com/img/d2bf/c323/360b877ce3514fd0bc829f06a0c4e8f5?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oiReCtvwb-fN60uMFpPn2b3-LRbN3v7eHTb9r588E4T8aOUaa3ck8v3~0kRWiBv5zflonZYmh13EklpDZ-V~pxqQqCJPLpPjfaag95Aa43nafDHesU2knAnaf1lg4tk98UYT3xjXhYnrrCdUNgna8D7M2xaLFSLRRPS1OzT1-AQMLMmNB6k34EQv3gHgXxvO9oZ36mPtDsMAV8yE0LIyyvnY1zoZ7jtSq10GrRvI8dpWlCanDPdF6GQpwej9IILuAURpl1hMiXtzk0Fhxqk1Pg0Rask-U4lIjMDaSMyw9tSoB7deRBU-YYNCrJveSo3DVfiakXt1n2xNmcaon~3hhQ__" 
-            alt="Enterprise AI Telecalling" 
-          />
-        </div>
-
-        {/* Content Section */}
-        <div className="space-y-6 flex flex-col items-center justify-center">
-          <h1 className="text-4xl max-w-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-            Enterprise AI Telecalling: The Strategic Imperative for Modern Businesses
-          </h1>
-
-          {/* Introduction */}
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <p className="text-lg  max-w-4xl leading-relaxed text-gray-300">
-              In the rapidly evolving landscape of customer communication, enterprises are facing a critical choice: innovate or become obsolete. AI Telecalling emerges as the definitive solution for businesses seeking to transform their customer engagement strategy.
+    <>
+    <div className="bg-black font-helvetica flex items-center justify-center w-screen">
+    <div className="base-image text-white lg:max-w-[70%] p-8 md:p-12">
+    <div className="flex flex-col sm:flex-row">
+     <img src="/4.png" 
+    className="md:min-w-[30%] w-full  rounded-lg min-w-[50%] bg-cover"
+    alt="" 
+    />
+     <div className="flex flex-col items-center justify-center p-3 sm:p-6">
+     <h1 className="text-2xl md:text-3xl font-bold mb-4">Top 10 Essential Features of AI-Based Telephony Solutions</h1>
+     <p className="text-base mb-8">Uncover the game-changing features of AI phone systems that are revolutionizing customer service. This comprehensive guide explores how Dialoft AI's advanced telephony solutions offer natural voices, context awareness, seamless integrations, and continuous learning to deliver unprecedented customer support experiences.</p>
+     </div>
+     </div>
+  
+    <div className="sm:mt-10">
+    <p className="text-base mb-8">
+       Imagine a phone system that answers calls, manages inquiries, and performs outreach—completely seamless. With Dialoft AI, businesses can transform their customer interactions with round-the-clock service efficiency, scalability, and a very human-like approach.
             </p>
-          </div>
-
-          {/* Key Benefits */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              {/* <BookOpen className="w-12 h-12 text-blue-500 mb-4" /> */}
-              <h2 className="text-xl font-bold mb-3 text-blue-400">Architectural Excellence</h2>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Advanced natural language processing</li>
-                <li>Context-aware communication</li>
-                <li>Multi-channel integration</li>
-                <li>Real-time learning capabilities</li>
-              </ul>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              {/* <Phone className="w-12 h-12 text-green-500 mb-4" /> */}
-              <h2 className="text-xl font-bold mb-3 text-green-400">Enterprise-Grade Capabilities</h2>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Scalable infrastructure</li>
-                <li>Robust security protocols</li>
-                <li>Comprehensive compliance management</li>
-                <li>Seamless legacy system integration</li>
-              </ul>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              {/* <Globe className="w-12 h-12 text-purple-500 mb-4" /> */}
-              <h2 className="text-xl font-bold mb-3 text-purple-400">Quantifiable Business Impact</h2>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>95% Cost Reduction</li>
-                <li>500x Call Processing Capacity</li>
-                <li>Zero Latency Response</li>
-                <li>50% ROI Within 30 Days</li>
-                <li>99.9% Interaction Accuracy</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Industry-Specific Transformations */}
-          <h2 className="text-3xl font-bold mb-6 text-center text-blue-400">
-            Strategic Deployment Across Critical Business Domains
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-bold mb-3 text-blue-400 flex items-center">
-                {/* <BookOpen className="w-6 h-6 mr-2" /> */} Sales Transformation
-              </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Automated lead qualification</li>
-                <li>Intelligent prospect engagement</li>
-                <li>Dynamic sales funnel optimization</li>
-                <li>Predictive conversion analysis</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-bold mb-3 text-green-400 flex items-center">
-                {/* <Phone className="w-6 h-6 mr-2" /> */} Customer Support Revolution
-              </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>24/7 multilingual support</li>
-                <li>Instant query resolution</li>
-                <li>Comprehensive issue tracking</li>
-                <li>Sentiment-driven interaction management</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-bold mb-3 text-yellow-400 flex items-center">
-                {/* <Shield className="w-6 h-6 mr-2" /> */} Operational Intelligence
-              </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Real-time performance analytics</li>
-                <li>Comprehensive interaction insights</li>
-                <li>Predictive customer behavior modeling</li>
-                <li>Continuous process optimization</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-bold mb-3 text-purple-400 flex items-center">
-                {/* <Globe className="w-6 h-6 mr-2" /> */} Advanced Technology Stack
-              </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Large Language Model Integration</li>
-                <li>Neural Network-Powered Interactions</li>
-                <li>Machine Learning Adaptation</li>
-                <li>Natural Language Understanding</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-800 p-6 rounded-xl shadow-lg col-span-full lg:col-span-1">
-              <h3 className="text-xl font-bold mb-3 text-purple-400 flex items-center">
-                {/* <BarChart2 className="w-6 h-6 mr-2" /> */} Security and Compliance Framework
-              </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>End-to-end encryption</li>
-                <li>GDPR and CCPA Compliant</li>
-                <li>Role-Based Access Control</li>
-                <li>Secure Data Handling Protocols</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Technology Highlights */}
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg  max-w-4xl">
-            <h2 className="text-3xl font-bold mb-6 text-center text-green-400">
-              Integration Ecosystem
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                {/* <Shield className="w-12 h-12 text-red-500 mb-4" /> */}
-                <h3 className="text-xl font-bold mb-3 text-red-400">Seamless Connectivity</h3>
-                <p className="text-gray-300">
-                  CRM System Integration, Marketing Automation Platforms, Cloud Communication Solutions, Enterprise Resource Planning (ERP) Systems.
-                </p>
-              </div>
-              <div>
-                {/* <BarChart2 className="w-12 h-12 text-yellow-500 mb-4" /> */}
-                <h3 className="text-xl font-bold mb-3 text-yellow-400">Competitive Differentiation</h3>
-                <p className="text-gray-300">
-                  Unparalleled Scalability, Predictive Intelligence, Cost-Effective Solution, Future-Ready Architecture, Continuous Innovation.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Call to Action */}
-          <div className="bg-blue-900 p-8 rounded-xl text-center shadow-2xl  max-w-4xl">
-            <h2 className="text-3xl font-bold mb-4">Your Enterprise Transformation Starts Here</h2>
-            <p className="text-lg mb-6 text-blue-100">
-              Unlock the potential of Advanced AI Communication, Strategic Business Intelligence, and Transformative Customer Engagement.
+            <p className="text-base mb-8">
+            If you're ready to adopt AI-driven phone solutions, here are the top 10 features you'll need to ensure success.
             </p>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg">
-              Schedule a Comprehensive Enterprise Demo
-            </button>
-          </div>
-
-          {/* Disclaimer */}
-          <div className="text-center text-sm text-gray-500 mt-4">
-            Comprehensive Disclaimer: Enterprise AI Telecalling solutions are customized. Actual implementation, performance, and results vary based on specific organizational requirements, existing infrastructure, and strategic objectives.
-          </div>
-        </div>
-      </div>
+      <h2 className="text-xl md:text-3xl font-bold mb-4">1. Natural, Human-Like Voices</h2>
+      <p className="text-base mb-8">Dialoft AI's advanced systems make customers feel as if they are talking to a real person. By employing advanced natural language processing and text-to-speech technology, the system replicates:</p>
+      <ul className="mb-8 list-disc list-inside">
+      <li>Human speech patterns</li>
+      <li>Natural intonations</li>
+      <li>Smooth conversational flow</li>
+      </ul>
+      <p className="text-base mb-8">This creates an authentic customer experience, fostering trust and satisfaction with every call.</p>
     </div>
-  );
-}
-
-export default Blog4;
+  
+    <div>
+      <h2 className="text-xl md:text-3xl font-bold mb-4">2. Live Call Transfer</h2>
+      <p className="text-base mb-8">Even the best AI system encounters complex problems requiring human intervention. Live call handoffs provide:</p>
+      <ul className="mb-8 list-disc list-inside">
+      <li>Smooth transitions from AI agents to human agents</li>
+      <li>Comprehensive call history transfer</li>
+      <li>Continuity of conversation</li>
+      <li>Ability for human agents to emphasize empathetic problem-solving</li>
+      </ul>
+    </div>
+  
+    <div>
+      <h2 className="text-xl md:text-3xl font-bold mb-4">3. Context Awareness</h2>
+      <p className="text-base mb-8">A comprehensive approach to customer service that involves:</p>
+      <ul className="mb-8 list-disc list-inside">
+      <li>Accessing past conversation details</li>
+      <li>Reviewing purchase history</li>
+      <li>Understanding individual customer preferences</li>
+      </ul>
+      <p className="text-base mb-8">This feature enables deep personalization while maintaining a smooth and informed handover to human agents.</p>
+    </div>
+  
+    <div>
+      <h2 className="text-xl md:text-3xl font-bold mb-4">4. Natural Language Understanding (NLU)</h2>
+      <p className="text-base mb-8">Advanced AI that:</p>
+      <ul className="mb-8 list-disc list-inside">
+      <li>Senses intent and conversational nuance</li>
+      <li>Analyzes speech patterns</li>
+      <li>Detects subtle communication elements like humor or sarcasm</li>
+      <li>Responds accurately to complex or open-ended questions</li>
+      </ul>
+      <p className="text-base mb-8">NLU saves time, enhances clarity, and maximizes customer satisfaction.</p>
+    </div>
+  
+    <div>
+      <h2 className="text-xl md:text-3xl font-bold mb-4">5. Call Monitoring and Prompt Filters</h2>
+      <p className="text-base mb-8">Built on the foundation of trust, Dialoft AI offers:</p>
+      <ul className="mb-8 list-disc list-inside">
+      <li>Monitoring tools to identify potential issues</li>
+      <li>Filters to flag suspicious interactions</li>
+      <li>Real-time oversight capabilities</li>
+      <li>Immediate issue addressing</li>
+      <li>Maintenance of safety and professionalism</li>
+      </ul>
+    </div>
+  
+    <div>
+      <h2 className="text-xl md:text-3xl font-bold mb-4">6. CRM Integrations</h2>
+      <p className="text-base mb-8">Streamline workflows by integrating with platforms like:</p>
+      <ul className="mb-8 list-disc list-inside">
+      <li>Salesforce</li>
+      <li>HubSpot</li>
+      <li>Other popular CRM systems</li>
+      </ul>
+      <p className="text-base mb-8">Benefits include:</p>
+      <ul className="mb-8 list-disc list-inside">
+      <li>Checking performance metrics</li>
+      <li>Analyzing call data</li>
+      <li>Consolidating customer interactions</li>
+      <li>No-code integration for businesses of all sizes</li>
+      </ul>
+    </div>
+  
+    <div>
+      <h2 className="text-xl md:text-3xl font-bold mb-4">7. Scalability for Expansion</h2>
+      <p className="text-base mb-8">Engineered to support:</p>
+      <ul className="mb-8 list-disc list-inside">
+      <li>Higher call volumes</li>
+      <li>Increased data loads</li>
+      <li>Consistent performance during peak seasons</li>
+      <li>Rapid business growth</li>
+      </ul>
+      <p className="text-base mb-8">Ensures customer service operates faultlessly at all times.</p>
+    </div>
+  
+    <div>
+      <h2 className="text-xl md:text-3xl font-bold mb-4">8. 24/7 Availability</h2>
+      <p className="text-base mb-8">Provide consistent, round-the-clock support:</p>
+      <ul className="mb-8 list-disc list-inside">
+      <li>Regardless of location</li>
+      <li>Without additional labor costs</li>
+      <li>Meeting modern customer expectations</li>
+      </ul>
+    </div>
+  
+    <div>
+      <h2 className="text-xl md:text-3xl font-bold mb-4">9. Automation for Efficiency</h2>
+      <p className="text-base mb-8">Automate routine interactions to:</p>
+      <ul className="mb-8 list-disc list-inside">
+      <li>Handle first-contact inquiries</li>
+      <li>Free human agents for high-value activities</li>
+      <li>Enhance team productivity</li>
+      <li>Improve overall customer experience</li>
+      </ul>
+    </div>
+  
+    <div>
+      <h2 className="text-xl md:text-3xl font-bold mb-4">10. Ongoing Learning and Improvement</h2>
+      <p className="text-base mb-8">Continuous algorithmic enhancement:</p>
+      <ul className="mb-8 list-disc list-inside">
+      <li>Improving accuracy with each interaction</li>
+      <li>Constantly updating system capabilities</li>
+      <li>Ensuring state-of-the-art performance</li>
+      </ul>
+    </div>
+  
+    <div>
+      <h2 className="text-xl md:text-3xl font-bold mb-4">Why Dialoft AI is Your Ideal Partner</h2>
+      <p className="text-base mb-8">Dialoft AI offers an intuitive, scalable platform for customer experience transformation. From no-code integration to proactive insights, our solutions empower businesses to excel in today's fast-paced, competitive marketplace.</p>
+      <p className="text-base mb-8">Ready to revolutionize your phone systems? Let's talk with Dialoft AI today. The future of customer service starts now.</p>
+    <BookDemoButton/>
+      </div>
+      </div>
+      </div>
+    </>
+    );
+  }
+  
+  export default Blog4
